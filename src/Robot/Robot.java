@@ -28,13 +28,12 @@ public class Robot {
         
         RobotSE marx = new RobotSE(england, 2, 3, Direction.SOUTH);
         
-        new Thing (england, 2, 3);
-        marx.setColor(Color.cyan);
+        new Thing (england, 2, 3); //create a new thing in england
+        marx.setColor(Color.cyan); //change the colour of Marx to cyan
     
-        //Moves the robot 2 units forward
-        marx.move(2);
-        // lemme see if i can use turn or something
-        marx.turnLeft();
+        
+        marx.move(2);       //Moves the robot 2 units forward
+        marx.turnLeft();    //Karl Turns to his left
         marx.move(2);
         marx.turnLeft();
         marx.move(2);
