@@ -27,10 +27,24 @@ public class A1Q4 {
         RobotSE Snoop = new RobotSE(meme, 0, 0, Direction.SOUTH); 
         RobotSE Dogg = new RobotSE (meme, 0, 1, Direction.SOUTH);
         Snoop.setColor(Color.GREEN);
-        Dogg.setColor(Color.GREEN);
+        Dogg.setColor(Color.GREEN); //(2, 1);
         
         new Wall (meme, 0, 1, Direction.WEST);
-        //to the future Kiwiocia, Dont forget about the damm walls, and also they have to meet at the same place at the same time (at {2,1} or if you use normal math, (1,2)
+        new Wall (meme, 1, 1, Direction.WEST);
+        new Wall (meme, 1, 1, Direction.SOUTH);
+        
+        Dogg.move();
+        Snoop.move();
+        Dogg.turnLeft();
+        Dogg.move();
+        Dogg.turnRight();
+        Snoop.move();
+        Dogg.move();
+        Snoop.turnLeft();
+        Dogg.turnRight();
+        Dogg.move();
+        Snoop.move();
+        
     }
     
 }
