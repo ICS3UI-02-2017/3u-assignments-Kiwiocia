@@ -25,9 +25,9 @@ public class A1Q3 {
         
         RobotSE Nick_C = new RobotSE(england, 3, 0, Direction.EAST); //put nick crompton in it
         Nick_C.setColor(Color.cyan); //I like cyan
-        new Thing(england, 3, 1);    //Ill just call this "SetupKiwiocia" from here on
+        new Thing(england, 3, 1);    //I'll just call this "SetupKiwiocia" from here on
             
-        new Wall (england, 3, 2, Direction.WEST);  //'s alotta walls
+        new Wall (england, 3, 2, Direction.WEST);  //plenty of walls
         new Wall (england, 3, 2, Direction.NORTH);
         new Wall (england, 2, 3, Direction.WEST);
         new Wall (england, 1, 3, Direction.WEST);

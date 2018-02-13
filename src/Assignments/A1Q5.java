@@ -29,19 +29,19 @@ public class A1Q5 {
         Obiwan.setLabel("Obi"); //labels for obiwan and kenboni
         Kenboni.setLabel("Ken");
         
-        new Wall (Tatooine, 2, 3, Direction.NORTH);
+        new Wall (Tatooine, 2, 3, Direction.NORTH); //Make the walls 
         new Wall (Tatooine, 2, 3, Direction.EAST);
         new Wall (Tatooine, 2, 3, Direction.WEST);
         new Wall (Tatooine, 3, 3, Direction.EAST);
         new Wall (Tatooine, 3, 3, Direction.SOUTH);
         
-        new Thing (Tatooine, 0, 0);
+        new Thing (Tatooine, 0, 0);  //place the things in the city
         new Thing (Tatooine, 1, 0);
         new Thing (Tatooine, 1, 1);
         new Thing (Tatooine, 1, 2);
         new Thing (Tatooine, 2, 2);
         
-        Obiwan.move();
+        Obiwan.move();                  //Move obiwan and kenboni in alternating motion so they finish facing each other
         Kenboni.turnAround();
         Obiwan.pickThing();
         Kenboni.move();

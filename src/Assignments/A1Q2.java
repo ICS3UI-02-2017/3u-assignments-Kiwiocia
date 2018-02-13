@@ -33,13 +33,13 @@ public class A1Q2 {
             new Wall (england, 2, 1, Direction.WEST); 
             new Wall (england, 2, 1, Direction.SOUTH); 
             
-            Nick_C.turnRight();
+            Nick_C.turnRight();  //move nick around
             Nick_C.move();
             Nick_C.turnLeft();
             Nick_C.move();
             Nick_C.turnLeft();
             Nick_C.move();
-            Nick_C.pickThing();
+            Nick_C.pickThing();     //Pick up the thing
             Nick_C.turnAround();
             Nick_C.move();
             Nick_C.turnRight();

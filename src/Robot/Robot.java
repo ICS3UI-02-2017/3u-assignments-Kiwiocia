@@ -30,7 +30,7 @@ public class Robot {
         
         new Thing (england, 2, 3); //create a new thing in england
         marx.setColor(Color.cyan); //change the colour of Marx to cyan
-    
+        new Wall (england, 4, 4, Direction.SOUTH);
         
         marx.move(2);       //Moves the robot 2 units forward
         marx.turnLeft();    //Karl Turns to his left
