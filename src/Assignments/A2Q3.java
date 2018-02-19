@@ -19,10 +19,11 @@ public class A2Q3 {
     public static void main(String[] args) {
     
         City meme = new City(); //I EXIST
-        RobotSE AB = new RobotSE(meme, -10, -2, Direction.SOUTH);
+        RobotSE AB = new RobotSE(meme, -2, 3, Direction.SOUTH);
        
-     if(AB.getStreet()!=0){
-           
+        if(AB.getStreet()==0){
+      }
+        else{        
         while(AB.getStreet()>0){
             while(AB.getDirection()!= Direction.NORTH){
                AB.turnLeft();
@@ -33,24 +34,25 @@ public class A2Q3 {
             while(AB.getDirection()!=Direction.SOUTH){
                 AB.turnLeft();
             }
-            AB.move();
-      }
-     }   
+            AB.move();}
+     }
+
         
-     if(AB.getAvenue()!=0){
-       while(AB.getAvenue()>0){
+        if(AB.getAvenue()==0){
+      }
+        else{        
+        while(AB.getAvenue()>0){
             while(AB.getDirection()!= Direction.WEST){
-                AB.turnLeft();
+               AB.turnLeft();
             }
             AB.move();
         }
-    
         while(AB.getAvenue()<0){
             while(AB.getDirection()!=Direction.EAST){
-                
-                      }
-       AB.move();
-      }
+                AB.turnLeft();
+            }
+            AB.move();}
      }           
     }
    }
+
