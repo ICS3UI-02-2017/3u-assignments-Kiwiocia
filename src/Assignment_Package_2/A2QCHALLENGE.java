@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Assignments;
+package Assignment_Package_2;
 
 import becker.robots.City;          //COPY PASTA IMPORTS
 import becker.robots.Direction;
@@ -28,6 +28,7 @@ public class A2QCHALLENGE {
      //Why
      //OH AND DONT FORGET THAT I ALSO NEED SIXTEEN DAMM "THINGS" 
      //THANKS
+     //so what i can do is take the code i used for the wall follower and adjust it so that it'll work for this
      
      new Wall (meme, 1, 3, Direction.WEST); 
      new Wall (meme, 2, 3, Direction.WEST);
@@ -71,10 +72,41 @@ public class A2QCHALLENGE {
      new Wall (meme, 8, 7, Direction.NORTH);//40
      new Wall (meme, 9, 7, Direction.SOUTH);
      new Wall (meme, 9, 7, Direction.EAST);
-     new Wall (meme, 4, 8, Direction.WEST);
-     new Wall (meme, 4, 8, Direction.NORTH);
-     new Wall (meme, 4, 1, Direction.NORTH); //45...
+     new Wall (meme, 5, 6, Direction.EAST);
      
+     new Thing(meme, 2, 3);
+     new Thing(meme, 2, 4);
+     new Thing(meme, 2, 5);
+     new Thing(meme, 2, 6);
+     new Thing(meme, 3, 3);
+     new Thing(meme, 3, 5);
+     new Thing(meme, 3, 7);
+     new Thing(meme, 5, 3);
+     new Thing(meme, 5, 4);
+     new Thing(meme, 5, 5);
+     new Thing(meme, 8, 3);
+     new Thing(meme, 8, 4);
+     new Thing(meme, 8, 7);
+     new Thing(meme, 9, 4);
+     new Thing(meme, 9, 5);
+     new Thing(meme, 9, 7);
      
+    while(AB.countThingsInBackpack()!=16){ 
+        if(AB.frontIsClear()){//this code will get the bot to follow any wall that is on his left
+            AB.move();
+            AB.turnLeft();
+            while(AB.canPickThing()){
+                AB.pickThing();
+            } 
+            while(!AB.frontIsClear()){ //if the front is not clear then turn left
+                AB.turnRight();
+            }      
+        }
     }
+    if(AB.countThingsInBackpack()==16){
+        AB.move();
+        AB.turnLeft();
+        AB.move();
+    }
+   }
 }

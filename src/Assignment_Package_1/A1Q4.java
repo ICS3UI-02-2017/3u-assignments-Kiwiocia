@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Assignments;
+package Assignment_Package_1;
 
 import becker.robots.City;          //COPY PASTA AYYYY
 import becker.robots.Direction;

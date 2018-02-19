@@ -1,4 +1,4 @@
-package Assignments;
+package Assignment_Package_1;
 
 import becker.robots.City;          //import all the shi- ... stuff ... i need
 import becker.robots.Direction;

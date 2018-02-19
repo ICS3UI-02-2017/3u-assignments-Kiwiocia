@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Assignments;
+package Assignment_Package_2;
 
 import becker.robots.City;          //COPY PASTA IMPORTS
 import becker.robots.Direction;
