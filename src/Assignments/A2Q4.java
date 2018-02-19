@@ -51,13 +51,11 @@ public class A2Q4 {
      while(AB.frontIsClear()){
          AB.move();
          AB.turnRight();
-         if(!AB.frontIsClear()){ //if the front is not clear then turn left
+         while(!AB.frontIsClear()){
              AB.turnLeft();
-             if(!AB.frontIsClear()){
-                AB.turnLeft();
              }
          }      
     }
    }
-  }
+  
 
