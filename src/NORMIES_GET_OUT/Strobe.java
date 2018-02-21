@@ -69,7 +69,7 @@ public class Strobe {
 
 
                     try {
-                        Thread.sleep(500);
+                        Thread.sleep(200);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

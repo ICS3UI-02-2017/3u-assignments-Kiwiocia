@@ -13,7 +13,7 @@ import java.awt.Color;
 
 /**
  *
- * @author bosta6892
+ * @author kiwiocia
  */
 public class A1Q5 {
 
@@ -41,7 +41,7 @@ public class A1Q5 {
         new Thing(Tatooine, 1, 2);
         new Thing(Tatooine, 2, 2);
 
-        Obiwan.move();                  //Move obiwan and kenboni in alternating motion so they finish facing each other
+        Obiwan.move();  //Move obiwan and kenboni in alternating motion so they finish facing each other
         Kenboni.turnAround();
         Obiwan.pickThing();
         Kenboni.move();

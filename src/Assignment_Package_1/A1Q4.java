@@ -28,14 +28,14 @@ public class A1Q4 {
         RobotSE Snoop = new RobotSE(meme, 0, 0, Direction.SOUTH);
         RobotSE Dogg = new RobotSE(meme, 0, 1, Direction.SOUTH);
         Snoop.setColor(Color.GREEN); // set the colour of snoop and dogg to green
-        Dogg.setColor(Color.GREEN); //the green colour has nothing to do with snoop's habbits
+        Dogg.setColor(Color.GREEN); 
 
         new Wall(meme, 0, 1, Direction.WEST);  //build walls
         new Wall(meme, 1, 1, Direction.WEST);
         new Wall(meme, 1, 1, Direction.SOUTH);
 
-        Dogg.move();    //snoop and dogg move in alternating fasion so that they intersect at the same place at about the same time
-        Snoop.move();
+        Dogg.move();    //snoop and dogg move in alternating fasion 
+        Snoop.move();   //so that they intersect at the same place at about the same time
         Dogg.turnLeft();
         Dogg.move();
         Dogg.turnRight();

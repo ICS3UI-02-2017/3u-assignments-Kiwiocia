@@ -13,7 +13,7 @@ import java.awt.Color;
 
 /**
  *
- * @author bosta6892
+ * @author kiwiocia
  */
 public class A2Q1 {
 
@@ -38,11 +38,11 @@ public class A2Q1 {
 
 
         while (AB.countThingsInBackpack() < 7) { //check to see if there are less than 7 thing in the backpack
-            AB.move();                       //if there are less than 7 then move and pick a thing
+            AB.move();     //if there are less than 7 then move and pick a thing
             AB.pickThing();
         }
         if (AB.countThingsInBackpack() >= 7) {  //check again to see if there are less than 7 things in the backpack
-            AB.move(4);
+            AB.move(4); //if not then move, ignoring the remaining things
         }
     }
 }

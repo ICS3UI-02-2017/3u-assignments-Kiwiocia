@@ -13,7 +13,7 @@ import java.awt.Color;
 
 /**
  *
- * @author bosta6892
+ * @author Kiwiocia
  */
 public class A2QCHALLENGE {
 
@@ -24,12 +24,13 @@ public class A2QCHALLENGE {
 
         City meme = new City(); //I EXIST
         RobotSE AB = new RobotSE(meme, 1, 3, Direction.SOUTH);
-        //ok so step on for this is to make a lot of walls to make the "sidewalk and driveway"
+        //ok so step on for this is to make a lot of walls to make the 
+        //"sidewalk and driveway"
         //i need fourty fokin five.
         //Why
         //OH AND DONT FORGET THAT I ALSO NEED SIXTEEN DAMM "THINGS" 
         //THANKS
-        //so what i can do is take the code i used for the wall follower and adjust it so that it'll work for this
+        //so what i can do is recycle the code i used for the wall follower 
 
         new Wall(meme, 1, 3, Direction.WEST);
         new Wall(meme, 2, 3, Direction.WEST);
@@ -93,21 +94,24 @@ public class A2QCHALLENGE {
         new Thing(meme, 9, 7);
 
         while (AB.countThingsInBackpack() != 16) {
-            if (AB.frontIsClear()) {//this code will get the bot to follow any wall that is on his left
+            if (AB.frontIsClear()) {
                 AB.move();
                 AB.turnLeft();
                 while (AB.canPickThing()) {
                     AB.pickThing();
                 }
-                while (!AB.frontIsClear()) { //if the front is not clear then turn left
-                    AB.turnRight();
+                while (!AB.frontIsClear()) {
+                    AB.turnRight();//if the front is not clear then turn left
                 }
             }
-        }
+        } //this loop will get the bot to follow any wall that is on his left
         if (AB.countThingsInBackpack() == 16) {
             AB.move();
             AB.turnLeft();
             AB.move();
-        }
+        }//if there are 16 thigns in the backpack then move to finishing pos
     }
+    //i did find an issue with this code however,
+    //if there is a thing that is not next to a wall
+    //then the robot cannot pick it up due to it's wall following nature
 }

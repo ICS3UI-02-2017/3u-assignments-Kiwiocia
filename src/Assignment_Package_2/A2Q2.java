@@ -13,7 +13,7 @@ import java.awt.Color;
 
 /**
  *
- * @author bosta6892
+ * @author kiwiocia
  */
 public class A2Q2 {
 

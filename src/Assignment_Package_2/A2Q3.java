@@ -10,7 +10,7 @@ import becker.robots.RobotSE;
 
 /**
  *
- * @author bosta6892
+ * @author kiwiocia
  */
 public class A2Q3 {
 
