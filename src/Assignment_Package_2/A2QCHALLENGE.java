@@ -23,7 +23,8 @@ public class A2QCHALLENGE {
     public static void main(String[] args) {
 
         City meme = new City(); //I EXIST
-        RobotSE AB = new RobotSE(meme, 1, 3, Direction.SOUTH);
+        final RobotSE AB = new RobotSE(meme, 1, 3, Direction.SOUTH);
+        final RobotSE MB = new RobotSE(meme, 1, 3, Direction.SOUTH);
         //ok so step on for this is to make a lot of walls to make the 
         //"sidewalk and driveway"
         //i need fourty fokin five.
@@ -93,25 +94,31 @@ public class A2QCHALLENGE {
         new Thing(meme, 9, 5);
         new Thing(meme, 9, 7);
 
-        while (AB.countThingsInBackpack() != 16) {
-            if (AB.frontIsClear()) {
-                AB.move();
-                AB.turnLeft();
+        new Thread() {
+            public void run() {
                 while (AB.canPickThing()) {
                     AB.pickThing();
                 }
-                while (!AB.frontIsClear()) {
-                    AB.turnRight();//if the front is not clear then turn left
+            }
+        }.start();
+
+        new Thread() {
+            public void run() {
+                while (AB.frontIsClear()) {
+                    AB.move();
+                    AB.turnLeft();
+                    if(AB.frontIsClear()){
+                        if(AB.frontIsClear()){
+                            AB.move();
+                            while(!AB.frontIsClear())
+                                AB.turnRight();
+                        }
+                    }
+                    if(!AB.frontIsClear()){
+                        AB.turnRight();
+                    }
                 }
             }
-        } //this loop will get the bot to follow any wall that is on his left
-        if (AB.countThingsInBackpack() == 16) {
-            AB.move();
-            AB.turnLeft();
-            AB.move();
-        }//if there are 16 thigns in the backpack then move to finishing pos
+        }.start();
     }
-    //i did find an issue with this code however,
-    //if there is a thing that is not next to a wall
-    //then the robot cannot pick it up due to it's wall following nature
 }
