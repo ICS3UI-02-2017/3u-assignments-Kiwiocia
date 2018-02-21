@@ -4,7 +4,6 @@
  */
 package NORMIES_GET_OUT;
 
-
 import becker.robots.City;
 import becker.robots.Direction;
 import becker.robots.RobotSE;
@@ -14,7 +13,8 @@ import java.awt.Color;
 
 /**
  * Learning how to use the ROBOTs
-* @author Kiwiocia
+ *
+ * @author Kiwiocia
  */
 public class Robot {
 
@@ -23,15 +23,15 @@ public class Robot {
      */
     public static void main(String[] args) {
         City england = new City();
-       
+
         // add robot to the city of england
-        
+
         RobotSE marx = new RobotSE(england, 2, 3, Direction.SOUTH);
-        
-        new Thing (england, 2, 3); //create a new thing in england
+
+        new Thing(england, 2, 3); //create a new thing in england
         marx.setColor(Color.cyan); //change the colour of Marx to cyan
-        new Wall (england, 4, 4, Direction.SOUTH);
-        
+        new Wall(england, 4, 4, Direction.SOUTH);
+
         marx.move(2);       //Moves the robot 2 units forward
         marx.turnLeft();    //Karl Turns to his left
         marx.move(2);
@@ -39,10 +39,10 @@ public class Robot {
         marx.move(2);
         marx.turnLeft();
         marx.move(2);
-        
+
 
         marx.pickThing();
-      
+
         marx.turnLeft();
         marx.move(2);
         marx.turnLeft();
@@ -52,7 +52,7 @@ public class Robot {
         marx.turnLeft();
         marx.move(2);
         marx.putThing();
-        
+
         marx.turnLeft();
         marx.move(2);
         marx.turnLeft();
