@@ -31,7 +31,10 @@ public class A2QCHALLENGE {
         //Why
         //OH AND DONT FORGET THAT I ALSO NEED SIXTEEN DAMM "THINGS" 
         //THANKS
-        //so what i can do is recycle the code i used for the wall follower 
+        //so what i can do is recycle the code i used for the wall follower
+        //Cross that last comment out like hard,
+        //what i need to use is Threads
+        //This will simplifly everything
 
         new Wall(meme, 1, 3, Direction.WEST);
         new Wall(meme, 2, 3, Direction.WEST);
@@ -93,7 +96,7 @@ public class A2QCHALLENGE {
         new Thing(meme, 9, 4);
         new Thing(meme, 9, 5);
         new Thing(meme, 9, 7);
-
+        //the robot will always pick up anything that it moves over
         new Thread() {
             public void run() {
                 while (AB.canPickThing()) {
@@ -104,17 +107,24 @@ public class A2QCHALLENGE {
 
         new Thread() {
             public void run() {
-                while (AB.frontIsClear()) {
-                    AB.move();
-                    AB.turnLeft();
-                    if(AB.frontIsClear()){
-                        if(AB.frontIsClear()){
-                            AB.move();
-                            while(!AB.frontIsClear())
-                                AB.turnRight();
-                        }
+                while (AB.getAvenue() == 3) {
+                    while (AB.getDirection() != Direction.SOUTH) {
+                        AB.turnRight();
                     }
-                    if(!AB.frontIsClear()){
+                    if (AB.frontIsClear()) {
+                        AB.move();
+                        AB.turnLeft();
+                        if (!AB.frontIsClear()) {
+                            AB.turnRight();
+                        }
+                        AB.move();
+                    }
+                }
+                while (AB.getAvenue() != 3) {
+                    if (AB.frontIsClear()) {
+                        AB.move();
+                    }
+                    if (!AB.frontIsClear()) {
                         AB.turnRight();
                     }
                 }
