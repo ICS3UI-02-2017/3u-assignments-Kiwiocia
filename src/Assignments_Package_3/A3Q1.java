@@ -31,9 +31,9 @@ public class A3Q1 {
         new Wall(Doggo, 2, 1, Direction.SOUTH);
         new Wall(Doggo, 2, 2, Direction.SOUTH);
 
-        int ouo = 0;
-        while (ouo < 2) {
-            Doc.move(2);     //i just copy pasted the code from assignemtn 1
+        int ouo = 0;        //create an integer
+        while (ouo < 2) {   //when the integer is less than 2
+            Doc.move(2);    //i just copy pasted the code from assignment 1
             Doc.turnLeft();
             Doc.move(3);
             Doc.turnLeft();
@@ -42,7 +42,7 @@ public class A3Q1 {
             Doc.move(3);
             Doc.turnLeft();
             Doc.move();
-            ouo = ouo + 1;
+            ouo = ouo + 1;  //Add 1 to the integer
         }
     }
 }
