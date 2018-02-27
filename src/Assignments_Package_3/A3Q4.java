@@ -55,5 +55,29 @@ public class A3Q4 {
         new Wall(danq, 5, 4, Direction.SOUTH);
         new Wall(danq, 5, 5, Direction.SOUTH);
 
+        int pupper = 0;
+        while (pupper != 1) {
+            Usain.move(3);
+            Usain.turnLeft();
+            Usain.move(3);
+            Usain.turnLeft();
+            Usain.move(3);
+            Usain.turnLeft();
+            pupper = pupper + 1;
+            int meme = 0;
+            while (meme != 3) {
+                Usain.move(6);
+                Usain.turnLeft();
+                Usain.move(3);
+                Usain.turnLeft();
+                Usain.move(3);
+                Usain.turnLeft();
+
+                meme = meme + 1;
+                if (meme == 3) {
+                    Usain.move(3);
+                }
+            }
+        }
     }
 }
