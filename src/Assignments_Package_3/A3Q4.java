@@ -72,7 +72,6 @@ public class A3Q4 {
                 Usain.turnLeft();
                 Usain.move(3);
                 Usain.turnLeft();
-
                 meme = meme + 1;
                 if (meme == 3) {
                     Usain.move(3);
