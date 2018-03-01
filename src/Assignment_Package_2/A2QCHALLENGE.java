@@ -10,6 +10,7 @@ import becker.robots.RobotSE;
 import becker.robots.Thing;
 import becker.robots.Wall;
 import java.awt.Color;
+import java.util.Scanner;
 
 /**
  *
@@ -23,8 +24,9 @@ public class A2QCHALLENGE {
     public static void main(String[] args) {
 
         City meme = new City(); //I EXIST
-        final RobotSE AB = new RobotSE(meme, 1, 3, Direction.SOUTH);
-        final RobotSE MB = new RobotSE(meme, 1, 3, Direction.SOUTH);
+        RobotSE AB = new RobotSE(meme, 0, 3, Direction.SOUTH);
+        RobotSE MB = new RobotSE(meme, 0, 3, Direction.SOUTH);
+        Scanner In = new Scanner(System.in);
         //ok so step on for this is to make a lot of walls to make the 
         //"sidewalk and driveway"
         //i need fourty fokin five.
@@ -36,6 +38,8 @@ public class A2QCHALLENGE {
         //what i need to use is Threads
         //This will simplifly everything
 
+        new Wall(meme, 0, 3, Direction.WEST);
+        new Wall(meme, 0, 3, Direction.EAST);
         new Wall(meme, 1, 3, Direction.WEST);
         new Wall(meme, 2, 3, Direction.WEST);
         new Wall(meme, 3, 3, Direction.WEST);
@@ -46,31 +50,31 @@ public class A2QCHALLENGE {
         new Wall(meme, 8, 3, Direction.WEST);
         new Wall(meme, 9, 3, Direction.WEST);
         new Wall(meme, 10, 3, Direction.WEST);//10
-        new Wall(meme, 1, 3, Direction.EAST);
+        new Wall(meme, 1, 7, Direction.EAST);
         new Wall(meme, 4, 3, Direction.EAST);
         new Wall(meme, 6, 3, Direction.EAST);
         new Wall(meme, 7, 3, Direction.EAST);
         new Wall(meme, 10, 3, Direction.EAST);
         new Wall(meme, 10, 3, Direction.SOUTH);//16
-        new Wall(meme, 2, 4, Direction.NORTH);
+        new Wall(meme, 1, 4, Direction.NORTH);
         new Wall(meme, 3, 4, Direction.SOUTH);
         new Wall(meme, 5, 4, Direction.NORTH);
         new Wall(meme, 5, 4, Direction.SOUTH);//20
         new Wall(meme, 8, 4, Direction.NORTH);
         new Wall(meme, 9, 4, Direction.SOUTH);//22
-        new Wall(meme, 2, 5, Direction.NORTH);
+        new Wall(meme, 1, 5, Direction.NORTH);
         new Wall(meme, 3, 5, Direction.SOUTH);
         new Wall(meme, 5, 5, Direction.NORTH);
         new Wall(meme, 5, 5, Direction.SOUTH);
         new Wall(meme, 8, 5, Direction.NORTH);
         new Wall(meme, 9, 5, Direction.SOUTH);//28
-        new Wall(meme, 2, 6, Direction.NORTH);
+        new Wall(meme, 1, 6, Direction.NORTH);
         new Wall(meme, 3, 6, Direction.SOUTH);//30
         new Wall(meme, 5, 6, Direction.NORTH);
         new Wall(meme, 5, 6, Direction.SOUTH);
         new Wall(meme, 8, 6, Direction.NORTH);
         new Wall(meme, 9, 6, Direction.SOUTH);//34
-        new Wall(meme, 2, 7, Direction.NORTH);
+        new Wall(meme, 1, 7, Direction.NORTH);
         new Wall(meme, 2, 7, Direction.EAST);
         new Wall(meme, 3, 7, Direction.EAST);
         new Wall(meme, 3, 7, Direction.SOUTH);
@@ -96,39 +100,72 @@ public class A2QCHALLENGE {
         new Thing(meme, 9, 4);
         new Thing(meme, 9, 5);
         new Thing(meme, 9, 7);
-        //the robot will always pick up anything that it moves over
-        new Thread() {
-            public void run() {
-                while (AB.canPickThing()) {
-                    AB.pickThing();
-                }
-            }
-        }.start();
 
-        new Thread() {
-            public void run() {
-                while (AB.getAvenue() == 3) {
-                    while (AB.getDirection() != Direction.SOUTH) {
-                        AB.turnRight();
-                    }
-                    if (AB.frontIsClear()) {
-                        AB.move();
-                        AB.turnLeft();
-                        if (!AB.frontIsClear()) {
-                            AB.turnRight();
-                        }
-                        AB.move();
-                    }
+        while (true) {
+            while (AB.getAvenue() == 3) {
+                while (AB.getDirection() != Direction.SOUTH) {
+                    AB.turnRight();
+
                 }
-                while (AB.getAvenue() != 3) {
-                    if (AB.frontIsClear()) {
-                        AB.move();
-                    }
+                while (AB.countThingsInBackpack() > 0) {
+                    AB.putAllThings();
+                }
+                if (AB.frontIsClear()) {
+                    AB.move();
+                    AB.turnLeft();
                     if (!AB.frontIsClear()) {
                         AB.turnRight();
+
+                    } else {
+                        AB.move();
+                    }
+                    while (AB.canPickThing()) {
+                        AB.pickThing();
+
+                    }
+                }
+                while (AB.getStreet() == 10) {
+                    while (MB.frontIsClear()) {
+                        MB.move();
+                        while (MB.canPickThing()) {
+                            MB.pickThing();
+                        }
+                        while (!MB.frontIsClear()) {
+                            MB.putAllThings();
+                            AB.putAllThings();
+                            int MBB = (MB.countThingsInBackpack());
+                            int ABB = (AB.countThingsInBackpack());
+                            System.out.println("MB " +MBB+ " AB " + ABB);
+                            In.nextLine();
+                        }
                     }
                 }
             }
-        }.start();
+            while (AB.getAvenue() != 3) {
+                if (AB.frontIsClear()) {
+                    AB.move();
+                    while (AB.canPickThing()) {
+                        AB.pickThing();
+                    }
+
+                }
+                if (!AB.frontIsClear()) {
+                    AB.turnRight();
+                    if (AB.frontIsClear()) {
+                        AB.move();
+                        while (AB.canPickThing()) {
+                            AB.pickThing();
+                        }
+                        AB.turnRight();
+                    }
+                    while (!AB.frontIsClear() && AB.getDirection() == Direction.SOUTH) {
+                        AB.turnRight();
+                        while (AB.frontIsClear()) {
+                            AB.move();
+                        }
+                    }
+                }
+            }
+        }
     }
 }
