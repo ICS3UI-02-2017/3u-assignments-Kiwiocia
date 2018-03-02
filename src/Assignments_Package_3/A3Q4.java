@@ -11,7 +11,7 @@ import becker.robots.Wall;
 
 /**
  *
- * @author bosta6892
+ * @author Kiwiocia
  */
 public class A3Q4 {
 
@@ -55,7 +55,9 @@ public class A3Q4 {
         new Wall(danq, 5, 4, Direction.SOUTH);
         new Wall(danq, 5, 5, Direction.SOUTH);
 
-        int pupper = 0;
+        //new integer called pupper
+        int pupper = 0; 
+        //while pupper does not = 1  then go trough these motions
         while (pupper != 1) {
             Usain.move(3);
             Usain.turnLeft();
@@ -63,8 +65,11 @@ public class A3Q4 {
             Usain.turnLeft();
             Usain.move(3);
             Usain.turnLeft();
+            //add 1 to pupper
             pupper = pupper + 1;
+            //new integer called meme
             int meme = 0;
+            //while meme is not 3 then do this
             while (meme != 3) {
                 Usain.move(6);
                 Usain.turnLeft();
@@ -72,6 +77,7 @@ public class A3Q4 {
                 Usain.turnLeft();
                 Usain.move(3);
                 Usain.turnLeft();
+                //add 1 to meme
                 meme = meme + 1;
                 if (meme == 3) {
                     Usain.move(3);

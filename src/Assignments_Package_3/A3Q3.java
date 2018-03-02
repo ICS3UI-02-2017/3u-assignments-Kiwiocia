@@ -21,6 +21,7 @@ public class A3Q3 {
      */
     public static void main(String[] args) {
         City England = new City();
+        //create a robot that starts with 20 things already in backpack
         RobotSE Pupper = new RobotSE(England, 1, 1, Direction.EAST, 20);
 
         int pepe = 0;               //new integer called pepe

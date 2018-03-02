@@ -12,7 +12,7 @@ import becker.robots.Thing;
 
 /**
  *
- * @author bosta6892
+ * @author Kiwiocia
  */
 public class A3Q2 {
 
