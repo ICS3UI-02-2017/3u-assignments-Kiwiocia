@@ -35,10 +35,9 @@ public class ForLoop {
         reee = 0;
         while (reee < 5) {
             AB.move();
-            reee=reee+1;
+            reee = reee + 1;
         }
-        for(int count = 0; count<5; count++){
-            
+        for (int count = 0; count < 5; count++) {
         }
     }
 }

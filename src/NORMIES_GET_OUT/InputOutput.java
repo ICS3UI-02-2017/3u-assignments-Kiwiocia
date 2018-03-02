@@ -35,29 +35,29 @@ public class InputOutput {
         System.out.println("On your mark,");
         System.out.println("get ready,");
         System.out.println("start");
-        
+
         //to use a scanner to get an info 
         Scanner In = new Scanner(System.in);
-        
+
         System.out.println("Enter your will to live");
         In.nextLine();
         System.out.println("then the contract is sealed");
-        
+
         System.out.println("tell me your year of brith");
-        
+
         int birthyear = In.nextInt();
         int age = 2018 - birthyear;
         System.out.println("you are " + age + " years in debt");
-        while (age < 0){
+        while (age < 0) {
             System.out.println("wait, WRONG, YOU ARE A L I A R");
-            
+
         }
-        
-        if (age > 30){
+
+        if (age > 30) {
             System.out.println("YOU ARE FAR TOO DEEP IN DEBT, PAY NOW");
             System.out.println("REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
         }
-                
-                
+
+
     }
 }
