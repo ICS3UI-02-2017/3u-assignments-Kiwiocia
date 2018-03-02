@@ -61,5 +61,14 @@ public class Robot {
         marx.move(2);
         marx.turnLeft();
         marx.move(2);
+        
+        new Thread() {
+            public void run() {
+                while (true) {
+                   
+                }
+
+            }
+        }.start();
     }
 }
