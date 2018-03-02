@@ -56,7 +56,7 @@ public class A3Q4 {
         new Wall(danq, 5, 5, Direction.SOUTH);
 
         //new integer called pupper
-        int pupper = 0; 
+        int pupper = 0;
         //while pupper does not = 1  then go trough these motions
         while (pupper != 1) {
             Usain.move(3);
