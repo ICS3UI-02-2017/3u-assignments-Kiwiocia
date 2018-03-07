@@ -105,7 +105,7 @@ public class A4Q2 extends javax.swing.JFrame {
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
         String andrew = inches.getText();
 
-        double danq = Integer.parseInt(andrew);
+        double danq = Double.parseDouble(andrew);
 
         double pupper = danq * 2.54;
 
