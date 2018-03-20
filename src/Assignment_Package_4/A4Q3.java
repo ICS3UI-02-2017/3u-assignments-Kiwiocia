@@ -105,7 +105,7 @@ public class A4Q3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//
     private void комрадеActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_комрадеActionPerformed
         String twoD = Index.getText();
         String noodle = Pinkie.getText();

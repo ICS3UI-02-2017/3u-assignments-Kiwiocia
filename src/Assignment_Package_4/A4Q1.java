@@ -94,10 +94,12 @@ public class A4Q1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //when the button is pressed preform :
     private void russianSpyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_russianSpyActionPerformed
-       
+        //get the text from textbox "opaBlyat" and create a sting out of it
         String lucifer = opaBlyat.getText();
-         debil.setText("Hello " +lucifer + " how are you doing as of this moment in spacetime");
+        //place the string "lucfer" into a text 
+        debil.setText("Hello " + lucifer + " how are you doing as of this moment in spacetime");
     }//GEN-LAST:event_russianSpyActionPerformed
 
     /**

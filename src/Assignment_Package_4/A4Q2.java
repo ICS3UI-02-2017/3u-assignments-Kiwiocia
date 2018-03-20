@@ -102,13 +102,15 @@ public class A4Q2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //when the button is pressed preform
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
+        //create a string called andrew that has the text from "inches"
         String andrew = inches.getText();
-
+        //turn the string "andrew" into a double and call  it danq
         double danq = Double.parseDouble(andrew);
-
+        //create a new double that is equal to dank *2.54
         double pupper = danq * 2.54;
-
+        //in a textbox, place the new double in a line of text with a sarcastic comment
         centimeters.setText("that is " + pupper + " centimeters, maybe don't using the imperial system next time");
     }//GEN-LAST:event_buttonActionPerformed
 
