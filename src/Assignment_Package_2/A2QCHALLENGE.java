@@ -29,6 +29,7 @@ public class A2QCHALLENGE {
         Scanner In = new Scanner(System.in);
         //ok so step on for this is to make a lot of walls to make the 
         //"sidewalk and driveway"
+        //...
         //i need fourty five.
         //Why
         //OH AND DONT FORGET THAT I ALSO NEED SIXTEEN DAMM "THINGS" 
@@ -37,6 +38,8 @@ public class A2QCHALLENGE {
         //Cross that last comment out like hard,
         //what i need to use is Threads
         //This will simplifly everything
+        
+        //screw that noise threads are not easy but i got it, and it was horrible
 
         new Wall(meme, 0, 3, Direction.WEST);   //make the course
         new Wall(meme, 0, 3, Direction.EAST);
