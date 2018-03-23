@@ -26,6 +26,7 @@ public class A4Q5 {
         double test1 = Double.parseDouble(test1A);
         System.out.println("And you got?");
         String result1a = In.nextLine();
+        //create a "percetage" of the number, a percent sign will not be shown though
         double result1 = Double.parseDouble(result1a);
         double total1 = result1 / test1 * 100;
 
@@ -60,14 +61,15 @@ public class A4Q5 {
         String result5a = In.nextLine();
         double result5 = Double.parseDouble(result5a);
         double total5 = result5 / test5 * 100;
-
+        
+        
         System.out.println("Well, " + name + " these are your test results");
         System.out.println("Test 1: " + total1 + " percent");
         System.out.println("Test 2: " + total2 + " percent");
         System.out.println("Test 3: " + total3 + " percent");
         System.out.println("Test 4: " + total4 + " percent");
         System.out.println("Test 5: " + total5 + " percent");
-
+        //calculate an average
         double avg1 = total1 + total2 + total3 + total4 + total5;
         double avg = avg1 / 5;
 

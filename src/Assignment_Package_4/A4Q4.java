@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class A4Q4 {
 
     public static void main(String[] args) {
-
+        //create a scanner
         Scanner In = new Scanner(System.in);
 
         System.out.println("so you wanna set up a party huh?");
@@ -25,6 +25,7 @@ public class A4Q4 {
             System.out.println("...");
             System.out.println("stuff");
             System.out.println("so, how much will the food cost?");
+            //create integers from the strings that the user enters
             String food1 = In.nextLine();
             int food = Integer.parseInt(food1);
             System.out.println("mmhmm, and the DJ?");
@@ -52,6 +53,7 @@ public class A4Q4 {
             String ticket1 = In.nextLine();
             int ticket = Integer.parseInt(ticket1);
             System.out.println("ok lemmme whip out the old calcy and see the tally");
+            //add all the integers
             int price = food + music + rent + deco + staff + misc;
             System.out.println("right, so that brings us to a total of " + price + ", hot damm");
             System.out.println("and you said tickets are " + ticket + " right?");
@@ -67,8 +69,7 @@ public class A4Q4 {
             }
         }
         if (party.contains("no") || party.contains("nope") || party.contains("nah bruv") || party.contains("nah") || party.contains("lol no")) {
-            System.out.println("h e c k");
+            System.out.println("h e c k i n  l a m e o ");
         }
-
     }
 }

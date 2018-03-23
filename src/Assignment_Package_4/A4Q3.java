@@ -107,11 +107,13 @@ public class A4Q3 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 //
     private void комрадеActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_комрадеActionPerformed
+        //when the button "comrade" is pressed get the text from all the stated textboxes
+        //and turn them into strings
         String twoD = Index.getText();
         String noodle = Pinkie.getText();
         String russle = Ring.getText();
         String murdoc = Middle.getText();
-
+        //set the textbox to the number from the previous textboexes
         gorillaz.setText("your numbers are " + twoD + ", " + murdoc + ", " + russle + ", " + noodle);
     }//GEN-LAST:event_комрадеActionPerformed
 
