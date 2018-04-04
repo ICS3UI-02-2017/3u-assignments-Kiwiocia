@@ -15,7 +15,7 @@ public class A5 {
     public static void main(String[] args) {
         //create a scanner
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter some word so i can translate that");
+        System.out.println("Ubbi Dubbi translator my man");
         //create a string that consists of the next line the user eneters
         String wordA = input.nextLine();
         //make the word a lower case word
@@ -32,18 +32,16 @@ public class A5 {
             if (vowels.indexOf(wordA.charAt(x)) == -1) {
                 char a = wordA.charAt(x);
                 word = word + a;
+            } else if (x - 1 >= 0 && vowels.indexOf(wordA.charAt(x - 1)) >= 0 && vowels.indexOf(wordA.charAt(x)) >= 0) {
+                char c = wordA.charAt(x);
+                word = word + c;
             } else if (vowels.indexOf(wordA.charAt(x)) >= 0) {
                 char b = wordA.charAt(x);
                 word = word + "ub" + b;
-            }
-            if (x - 1 >= 0 && vowels.indexOf(wordA.charAt(x - 1)) >= 0 && vowels.indexOf(wordA.charAt(x)) >= 0) {
-                char c = wordA.charAt(x);
-                word = word + c;
             }
         }
         System.out.println("your word is");
         System.out.println(word);
         System.out.println("in ubbi dubbi");
-
     }
 }
