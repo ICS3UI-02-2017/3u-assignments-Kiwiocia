@@ -41,7 +41,7 @@ public class A6Q5 {
 
             }
         }
-        //
+        //tell the user the sorted numbers
         for (int y = 0; y < arrayNums; y++) {
             System.out.println(nums[y]);
         }
