@@ -77,30 +77,8 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     @Override
     public void paintComponent(Graphics g) {
         // always clear the screen first!
-        g.clearRect(0, 0, WIDTH, HEIGHT);
-
-        // GAME DRAWING GOES HERE       
-        g.setColor(Color.white);
-        g.fillRect(0, 0, 800, 600);
-        g.setColor(skin);
-        g.fillOval(190, 62, 400, 475);
-        g.setColor(Color.white);
-        g.fillOval(190, 20, 300, 300);
-        g.setColor(hair);
-        g.fillOval(490, 135, 100, 150);
-        g.fillOval(465, 110, 110, 135);
-        g.fillOval(450, 100, 115, 140);
-        g.fillOval(255, 35, 300, 175);
-        g.fillOval(220, 130, 100, 225);
-        g.setColor(skin);
-        g.fillOval(200, 100, 350, 460);
-        g.setColor(hair);
-        int[] eyebrow1X = {370, 380, 470, 500};
-        int[] eyebrow1Y = {220, 200, 200, 220};
-        g.fillPolygon(eyebrow1X, eyebrow1Y, 4);
-        int[] eyebrow2X = {290, 280, 210, 210};
-        int[] eyebrow2Y = {220, 200, 200, 220};
-        g.fillPolygon(eyebrow2X, eyebrow2Y, 4);
+        //make a temporary location for the glasses while i make the left eye
+        //create the bridge of the classes, Start of Glasses
         g.setColor(rims);
         g.fillOval(250, 200, 160, 160);
         g.setColor(skin);
@@ -113,11 +91,11 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         int[] sidesX = {499, 499, 550, 550};
         int[] sidesY = {273, 265, 235, 243};
         g.fillPolygon(sidesX, sidesY, 4);
-        g.setColor(skin);
-        g.fillOval(540, 220, 75, 125);
+        //colour of the glasses, and lens filled in
         g.setColor(glasses);
         g.fillOval(155, 200, 150, 150);
         g.fillOval(355, 200, 150, 150);
+        //shine of the glasses added
         g.setColor(luster);
         int[] rimsX = {420, 420, 475, 475};
         int[] rimsY = {250, 230, 270, 290};
@@ -125,6 +103,43 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         int[] shineX = {220, 220, 275, 275};
         int[] shineY = {250, 230, 270, 290};
         g.fillPolygon(shineX, shineY, 4);
+        //end of glasses
+        g.clearRect(0, 0, WIDTH, HEIGHT);
+
+        // GAME DRAWING GOES HERE    \
+        //make a background
+        g.setColor(Color.white);
+        g.fillRect(0, 0, 800, 600);
+        //base of the face part 1
+        g.setColor(skin);
+        g.fillOval(190, 62, 400, 475);
+        //remove part of the face to make a better shape
+        g.setColor(Color.white);
+        g.fillOval(190, 20, 300, 300);
+        //make the hair
+        g.setColor(hair);
+        g.fillOval(490, 135, 100, 150);
+        g.fillOval(465, 110, 110, 135);
+        g.fillOval(450, 100, 115, 140);
+        g.fillOval(255, 35, 300, 175);
+        g.fillOval(220, 130, 100, 225);
+        //place the face over the circle to givethe hair a better shape
+        g.setColor(skin);
+        g.fillOval(200, 100, 350, 460);
+        //eyebrows
+        g.setColor(hair);
+        int[] eyebrow1X = {370, 380, 470, 500};
+        int[] eyebrow1Y = {220, 200, 200, 220};
+        g.fillPolygon(eyebrow1X, eyebrow1Y, 4);
+        int[] eyebrow2X = {290, 280, 210, 210};
+        int[] eyebrow2Y = {220, 200, 200, 220};
+        g.fillPolygon(eyebrow2X, eyebrow2Y, 4);
+        //ear
+        g.setColor(skin);
+        g.fillOval(540, 220, 75, 125);
+        //start of eyes
+        
+        
 
 
         // GAME DRAWING ENDS HERE
