@@ -18,13 +18,13 @@ import javax.swing.Timer;
  *
  * @author Kiwiocia
  */
-public class The_Face_Thing extends JComponent implements ActionListener {
+public class Game_Practice extends JComponent implements ActionListener {
 
     // Height and Width of our game
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
     //Title of the window
-    String title = "Face Guy";
+    String title = "Boi";
     // sets the framerate and delay for our game
     // this calculates the number of milliseconds per frame
     // you just need to select an approproate framerate
@@ -34,21 +34,22 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     // this is what keeps our time running smoothly :)
     Timer gameTimer;
     // YOUR GAME VARIABLES WOULD GO HERE
-    // GAME VARIABLES END HERE    
-    Color skin = new Color(229, 186, 107);
-    Color glasses = new Color(4, 109, 93);
-    Color rims = new Color(225, 225, 225);
-    Color hair = new Color(45, 41, 38);
-    Color luster = new Color(250, 250, 250);
-    Color eyes = new Color(61, 34, 1);
-    int eyesX = 390;
-    int eyesY = 240;
-    int pupilX = eyesX + 12;
-    int pupilY = eyesY + 12;
+    Color purple = new Color(174, 37, 237);
+    int pacmanY = 500;
+    int pacmanX = 500;
+    int pacmanAngle = 135;
+    int pacmanRotate = 270;
+    boolean pacmanOpen = false;
+    boolean pacmanClose = true;
+    int mouseX = 0;
+    int mouseY = 0;
+    boolean moveUp = false;
+    boolean moveDown = true;
 
+    // GAME VARIABLES END HERE    
     // Constructor to create the Frame and place the panel in
     // You will learn more about this in Grade 12 :)
-    public The_Face_Thing() {
+    public Game_Practice() {
         // creates a windows to show my game
         JFrame frame = new JFrame(title);
 
@@ -82,79 +83,40 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     @Override
     public void paintComponent(Graphics g) {
         // always clear the screen first!
-        //make a temporary location for the glasses while i make the left eye
-        //create the bridge of the classes, Start of Glasses
-        g.setColor(rims);
-        g.fillOval(250, 200, 160, 160);
-        g.setColor(skin);
-        g.fillOval(300, 220, 60, 30);
-        g.fillRect(314, 245, 33, 100);
-        g.fillOval(230, 260, 200, 150);
-        g.setColor(rims);
-        g.fillOval(150, 195, 160, 160);
-        g.fillOval(350, 195, 160, 160);
-        int[] sidesX = {499, 499, 550, 550};
-        int[] sidesY = {273, 265, 235, 243};
-        g.fillPolygon(sidesX, sidesY, 4);
-        //colour of the glasses, and lens filled in
-        g.setColor(glasses);
-        g.fillOval(155, 200, 150, 150);
-        g.fillOval(355, 200, 150, 150);
-        //shine of the glasses added
-        g.setColor(luster);
-        int[] rimsX = {420, 420, 475, 475};
-        int[] rimsY = {250, 230, 270, 290};
-        g.fillPolygon(rimsX, rimsY, 4);
-        int[] shineX = {220, 220, 275, 275};
-        int[] shineY = {250, 230, 270, 290};
-        g.fillPolygon(shineX, shineY, 4);
-        //end of glasses
         g.clearRect(0, 0, WIDTH, HEIGHT);
 
-        // GAME DRAWING GOES HERE    \
-        //make a background
-        g.setColor(Color.white);
-        g.fillRect(0, 0, 800, 600);
-        //base of the face part 1
-        g.setColor(skin);
-        g.fillOval(190, 62, 400, 475);
-        //remove part of the face to make a better shape
-        g.setColor(Color.white);
-        g.fillOval(190, 20, 300, 300);
-        //make the hair
-        g.setColor(hair);
-        g.fillOval(490, 135, 100, 150);
-        g.fillOval(465, 110, 110, 135);
-        g.fillOval(450, 100, 115, 140);
-        g.fillOval(255, 35, 300, 175);
-        g.fillOval(220, 130, 100, 225);
-        //place the face over the circle to givethe hair a better shape
-        g.setColor(skin);
-        g.fillOval(200, 100, 350, 460);
-        //eyebrows
-        g.setColor(hair);
-        int[] eyebrow1X = {370, 380, 470, 500};
-        int[] eyebrow1Y = {220, 200, 200, 220};
-        g.fillPolygon(eyebrow1X, eyebrow1Y, 4);
-        int[] eyebrow2X = {290, 280, 210, 210};
-        int[] eyebrow2Y = {220, 200, 200, 220};
-        g.fillPolygon(eyebrow2X, eyebrow2Y, 4);
-        //ear
-        g.setColor(skin);
-        g.fillOval(540, 220, 75, 125);
-        //start of eyes
-        g.setColor(Color.white);
-        g.fillOval(380, 240, 100, 50);
-        g.setColor(eyes);
-        g.fillOval(eyesX, eyesY, 50,50);
-        g.setColor(Color.BLACK);
-        g.fillOval(pupilX,pupilY,25,25);
-        //start of eyelashes
-        
 
+        g.setColor(Color.magenta);
 
+        // GAME DRAWING GOES HERE
+        //cutsom colours
+        g.setColor(purple);
+        //create a background?
+        g.fillRect(0, 0, WIDTH, HEIGHT);
+        //Rectangle, (x,y, Width, Height
+        g.fillRect(0, 0, 100, 200);
+
+        g.setColor(Color.cyan);
+
+        g.fillOval(0, 0, mouseX, mouseY);
+
+        int[] triangleX = {550, 562, 560};
+        int[] triangleY = {400, 500, 500};
+        //array of x points, array of y points and number of points
+        g.fillPolygon(triangleX, triangleY, 3);
+
+        //arch drawings
+        g.setColor(Color.yellow);
+        //(x, y width height, angle, rotation)
+        g.fillArc(500, pacmanY, 100, 100, pacmanAngle, pacmanRotate);
+
+        g.setColor(Color.black);
+        //(x,y,x,y)
+        g.drawLine(100, 100, 500, 500);
 
         // GAME DRAWING ENDS HERE
+
+
     }
 
     // This method is used to do any pre-setup you might need to do
@@ -166,6 +128,31 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     // The main game loop
     // In here is where all the logic for my game will go
     public void gameLoop() {
+        pacmanY = pacmanY - 5;
+        //when pacman leaves the screen
+
+        if (pacmanY < -100) {
+            pacmanY = HEIGHT;
+        }
+        if (pacmanX < -100) {
+            pacmanX = WIDTH;
+        }
+        if (pacmanAngle <= 90) {
+            pacmanClose = false;
+        }
+        if (pacmanAngle >= 140) {
+            pacmanClose = true;
+        }
+        if (pacmanClose) {
+            pacmanAngle = pacmanAngle - 10;
+            pacmanRotate = pacmanRotate + 20;
+        } else {
+            pacmanAngle = pacmanAngle + 10;
+            pacmanRotate = pacmanRotate - 20;
+        }
+
+        if (moveUp) {
+        }
     }
 
     // Used to implement any of the Mouse Actions
@@ -189,6 +176,8 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         // if the mouse has moved positions
         @Override
         public void mouseMoved(MouseEvent e) {
+            mouseX = e.getX();
+            mouseY = e.getY();
         }
     }
 
@@ -198,11 +187,29 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         // if a key has been pressed down
         @Override
         public void keyPressed(KeyEvent e) {
+            int keyCode = e.getKeyCode();
+            //which key is being pressed
+            if (keyCode == KeyEvent.VK_W) {
+                moveUp = true;
+            }
+            if (keyCode == KeyEvent.VK_S) {
+                moveDown = true;
+            }
+
         }
 
         // if a key has been released
         @Override
         public void keyReleased(KeyEvent e) {
+            int keyCode = e.getKeyCode();
+            //which key is being pressed
+            if (keyCode == KeyEvent.VK_W) {
+                moveUp = false;
+            }
+            if (keyCode == KeyEvent.VK_S) {
+                moveDown = false;
+            }
+
         }
     }
 
@@ -218,6 +225,6 @@ public class The_Face_Thing extends JComponent implements ActionListener {
      */
     public static void main(String[] args) {
         // creates an instance of my game
-        The_Face_Thing game = new The_Face_Thing();
+        Game_Practice game = new Game_Practice();
     }
 }
