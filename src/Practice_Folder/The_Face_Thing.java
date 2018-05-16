@@ -41,10 +41,14 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     Color hair = new Color(45, 41, 38);
     Color luster = new Color(250, 250, 250);
     Color eyes = new Color(61, 34, 1);
-    int eyesX = 390;
-    int eyesY = 240;
-    int pupilX = eyesX + 12;
-    int pupilY = eyesY + 12;
+    Color luster2 = new Color(232, 232, 232);
+    int brow1YPos = 220;
+    boolean eyebrowUp = true;
+    boolean eyebrowDown = false;
+    int luster1aX = 435;
+    int luster1aY = 250;
+    int luster2aX = 10;
+    boolean lusterMove = true;
 
     // Constructor to create the Frame and place the panel in
     // You will learn more about this in Grade 12 :)
@@ -83,35 +87,11 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     public void paintComponent(Graphics g) {
         // always clear the screen first!
         //make a temporary location for the glasses while i make the left eye
-        //create the bridge of the classes, Start of Glasses
-        g.setColor(rims);
-        g.fillOval(250, 200, 160, 160);
-        g.setColor(skin);
-        g.fillOval(300, 220, 60, 30);
-        g.fillRect(314, 245, 33, 100);
-        g.fillOval(230, 260, 200, 150);
-        g.setColor(rims);
-        g.fillOval(150, 195, 160, 160);
-        g.fillOval(350, 195, 160, 160);
-        int[] sidesX = {499, 499, 550, 550};
-        int[] sidesY = {273, 265, 235, 243};
-        g.fillPolygon(sidesX, sidesY, 4);
-        //colour of the glasses, and lens filled in
-        g.setColor(glasses);
-        g.fillOval(155, 200, 150, 150);
-        g.fillOval(355, 200, 150, 150);
-        //shine of the glasses added
-        g.setColor(luster);
-        int[] rimsX = {420, 420, 475, 475};
-        int[] rimsY = {250, 230, 270, 290};
-        g.fillPolygon(rimsX, rimsY, 4);
-        int[] shineX = {220, 220, 275, 275};
-        int[] shineY = {250, 230, 270, 290};
-        g.fillPolygon(shineX, shineY, 4);
-        //end of glasses
+
         g.clearRect(0, 0, WIDTH, HEIGHT);
 
         // GAME DRAWING GOES HERE    \
+
         //make a background
         g.setColor(Color.white);
         g.fillRect(0, 0, 800, 600);
@@ -134,7 +114,7 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         //eyebrows
         g.setColor(hair);
         int[] eyebrow1X = {370, 380, 470, 500};
-        int[] eyebrow1Y = {220, 200, 200, 220};
+        int[] eyebrow1Y = {brow1YPos, brow1YPos - 20, brow1YPos - 20, brow1YPos};
         g.fillPolygon(eyebrow1X, eyebrow1Y, 4);
         int[] eyebrow2X = {290, 280, 210, 210};
         int[] eyebrow2Y = {220, 200, 200, 220};
@@ -142,15 +122,38 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         //ear
         g.setColor(skin);
         g.fillOval(540, 220, 75, 125);
-        //start of eyes
-        g.setColor(Color.white);
-        g.fillOval(380, 240, 100, 50);
-        g.setColor(eyes);
-        g.fillOval(eyesX, eyesY, 50,50);
-        g.setColor(Color.BLACK);
-        g.fillOval(pupilX,pupilY,25,25);
-        //start of eyelashes
-        
+        //make the bruidge of the glasses under the eyes
+        g.setColor(rims);
+        g.fillOval(250, 200, 160, 160);
+        g.setColor(skin);
+        g.fillOval(300, 220, 60, 30);
+        g.fillRect(314, 245, 33, 100);
+        g.fillOval(230, 260, 200, 150);
+        //start of glasses
+        g.setColor(rims);
+        g.fillOval(150, 195, 160, 160);
+        g.fillOval(350, 195, 160, 160);
+        int[] sidesX = {499, 499, 550, 550};
+        int[] sidesY = {273, 265, 235, 243};
+        g.fillPolygon(sidesX, sidesY, 4);
+        //colour of the glasses, and lens filled in
+        g.setColor(glasses);
+        g.fillOval(155, 200, 150, 150);
+        g.fillOval(355, 200, 150, 150);
+        //shine of the glasses added
+        g.setColor(luster);
+        int[] rimsX = {435, 435, 475, 475};
+        int[] rimsY = {250, 230, 270, 290};
+        g.fillPolygon(rimsX, rimsY, 4);
+        int[] shineX = {235, 235, 275, 275};
+        int[] shineY = {250, 230, 270, 290};
+        g.fillPolygon(shineX, shineY, 4);
+        g.setColor(luster2);
+        int[] luster1X = {luster1aX, luster1aX, luster1aX + 10, luster1aX + 10};
+        int[] luster1Y = {luster1aY, luster1aY - 20, luster1aY -10, luster1aY + 10};
+        g.fillPolygon(luster1X, luster1Y, 4);
+        //end of glasses
+
 
 
 
@@ -166,6 +169,26 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     // The main game loop
     // In here is where all the logic for my game will go
     public void gameLoop() {
+        if (brow1YPos <= 190) {
+            eyebrowUp = false;
+        }
+        if (brow1YPos >= 220) {
+            eyebrowUp = true;
+        }
+        if (eyebrowUp) {
+            brow1YPos = brow1YPos - 2;
+        } else {
+            brow1YPos = brow1YPos + 2;
+        }
+        if (lusterMove){
+            luster1aX = luster1aX+1;
+            luster1aY = luster1aY+1;
+        }
+        if(luster1aX == 465){
+            luster1aX= 435; 
+            luster1aY=250;
+        }
+        
     }
 
     // Used to implement any of the Mouse Actions
