@@ -49,6 +49,16 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jTextField10 = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel6 = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jPanel7 = new javax.swing.JPanel();
+        jTextField11 = new javax.swing.JTextField();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea6 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -90,7 +100,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(463, Short.MAX_VALUE))
+                .addContainerGap(497, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("The Cover", jPanel4);
@@ -131,17 +141,19 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(205, Short.MAX_VALUE))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro", jPanel1);
 
         jPanel3.setBackground(new java.awt.Color(239, 219, 148));
 
+        jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(239, 219, 148));
         jTextField7.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
         jTextField7.setText("How the Game is played");
 
+        jTextArea4.setEditable(false);
         jTextArea4.setBackground(new java.awt.Color(239, 219, 148));
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
@@ -167,17 +179,19 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(396, Short.MAX_VALUE))
+                .addContainerGap(430, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro 2", jPanel3);
 
         jPanel2.setBackground(new java.awt.Color(247, 235, 195));
 
+        jTextField2.setEditable(false);
         jTextField2.setBackground(new java.awt.Color(247, 235, 195));
         jTextField2.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField2.setText("Basic Terms that everyone should know");
 
+        jTextField3.setEditable(false);
         jTextField3.setBackground(new java.awt.Color(247, 235, 195));
         jTextField3.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField3.setText("D(x)");
@@ -187,14 +201,17 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             }
         });
 
+        jTextField4.setEditable(false);
         jTextField4.setBackground(new java.awt.Color(247, 235, 195));
         jTextField4.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField4.setText("When the term D20, or D6 or D8 is used, it refers to a dice with that many faces. Ex (D20 = 20 sided dice, D6 = 6 sided)");
 
+        jTextField5.setEditable(false);
         jTextField5.setBackground(new java.awt.Color(247, 235, 195));
         jTextField5.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField5.setText("D100");
 
+        jTextArea3.setEditable(false);
         jTextArea3.setBackground(new java.awt.Color(247, 235, 195));
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
@@ -202,15 +219,20 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextArea3.setText("\tThe D100 is a little bit different, it consists of 2 die rolls, a D10 and a percentile dice, which is a D10 \nbut it goes up by 10 instead of 10 (sides go from 00 to 10 to 90). These 2 die are rolled at the same time and added to \neach other. (ex D10 = 9, D% = 50, result is 59)");
         jScrollPane3.setViewportView(jTextArea3);
 
+        jTextField6.setEditable(false);
         jTextField6.setBackground(new java.awt.Color(247, 235, 195));
         jTextField6.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField6.setText("Ability Scores");
 
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(247, 235, 195));
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("\t\n\tEach character and monster has capablities that are defined by Ability scores, There are 6 ability scores, \nthey are as follows:\n\tStrength: A measure of the beings athleticism or bodily power, this would modify your character's ability \n\t               to do physicly strenuous tasks like a running long jump or carrying a heavy object\n\tDexterity: A measure of Physical Agility, Balance, Reflexes, Overall nimbelness. This would effect \n\t               meticulous or agile tasks such as lockpicking, hiding or pickpocketing\n\tConstitution: A measure of vital force, health, stamina. This would effect a characters sturdiness, or \n\t                   a resistance to a poison.\n\tIntelligence: A measure of Mental acuity, information recall, analytical skill. This would effect your \n\t                  character's ability to remeber past events, lore of town, this also effects a wizzard's ability to\n\t                  cast spells.\n\tWisdom: A measure of Awareness, intuition, insight. This would effect your characters ability to perceive\n\t              distant objects, to stay alert and general knowledge like medicine, nature or survival.\n\tCharisma: A measure of Confidence, eloquence, leadership. This effects your character's ability to\n\t               persuade and cham others.");
+        jTextArea2.setText("\t\n\tEach character and monster has capablities that are defined by Ability scores, There are 6 ability scores, \nthey are as follows:\n\tStrength: A measure of the beings athleticism or bodily power, this would modify your character's ability \n\t               to do physicly strenuous tasks like a running long jump or carrying a heavy object\n\tDexterity: A measure of Physical Agility, Balance, Reflexes, Overall nimbelness. This would effect \n\t               meticulous or agile tasks such as lockpicking, hiding or pickpocketing\n\tConstitution: A measure of vital force, health, stamina. This would effect a characters sturdiness, or \n\t                   a resistance to a poison.\n\tIntelligence: A measure of Mental acuity, information recall, analytical skill. This would effect your \n\t                  character's ability to remeber past events, lore of town, this also effects a wizzard's ability to\n\t                  cast spells.\n\tWisdom: A measure of Awareness, intuition, insight. This would effect your characters ability to perceive\n\t              distant objects, to stay alert and general knowledge like medicine, nature or survival.\n\tCharisma: A measure of Confidence, eloquence, leadership. This effects your character's ability to\n\t               persuade and convince others to help do your bidding");
         jScrollPane2.setViewportView(jTextArea2);
+
+        jTextField10.setText("Ability Modifiers");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -224,15 +246,19 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(23, 23, 23)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4)
-                                    .addComponent(jScrollPane3)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jScrollPane2)))))
+                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jTextField4)
+                                        .addComponent(jScrollPane3)
+                                        .addGroup(jPanel2Layout.createSequentialGroup()
+                                            .addGap(10, 10, 10)
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(jScrollPane2))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -254,11 +280,89 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Terms to know", jPanel2);
+
+        jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextArea5.setRows(5);
+        jTextArea5.setText("\t\n\tMaking a character in dungeons and dragons is a seemingly complicated and lengthy \nprocess that can intimidate new players that are used to the normal RPG character maker, where all the \npresets and what you want are just given quickly without any math being performed. The Whole point of\nthis program to make that lengthly process much quicker.\n\n\tSo here are the Basics of character building:\n\n\tFirst, off You'll need 4 D6, 4 Six-Sided Die, This will be needed to determine your\ncharacter's ability scores. You'll first decide your race (as in like species as a whole), your class, and then\nyour background. The player handbook (PH) recommends this order of making a character.\n    \n\t\t     That is a dumb approach\n\n\tThe better method of doing this is to decide your Class first, this is because the class\nthat you choose is more effective with certain ability scores being higher than others (ex Rogues are \nbetter if they have a higher Dexterity score, Paladins are better with Constitution and Strength, etc). \nThis means that if you know which class you want, then deciding the right race is much easier because\neach race as certain proficiencies and bonuses to ability scores (ex Dwarves get bonuses to constitution, \nso they would make for better paladins than they would, say, a wizard). Then finishing off with\nbackground because background is more useful to your character as a story background. Yes, it is highly\nrecommended that you have a background story for your character. It's quite helpful and easier to roleplay\na character that has a purpose that they search for, it just in general make the game much more fun to\nplay.");
+        jScrollPane5.setViewportView(jTextArea5);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 798, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 642, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(179, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("How this works", jPanel6);
+
+        jTextField11.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
+        jTextField11.setText("Classes: Broken down and explained");
+
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 16)); // NOI18N
+        jTextArea6.setRows(5);
+        jTextArea6.setText("\n\tBarbarian: A fierce warrior of a primitive background who can enter a battle rage,  Strength and \nConstitution, light and medium armor, shields, simple and martial weapons. They are a basic character Class that uses\nyour basic sword, axe, hammer, etc. As stated, they can enter a state of battle rage, which allows them to hit harder.\n\n\tBard: An inspiring magician whose power echoes the music of creation, Dexterity & Charisma, \nlight armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. Bards are an odd class, they are kinda\ngood at everything, but not amazing at anything.\n\n\tA priestly champion who wields divine magic in service of a higher power, d8, Wisdom & Charisma, \nlight and medium armor, shields, simple weapons. They are a blend of a beefy melee warior");
+        jScrollPane6.setViewportView(jTextArea6);
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(169, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("tab2", jPanel7);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane2)
+        );
+
+        jTabbedPane1.addTab("The Character Maker", jPanel5);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -324,16 +428,26 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
