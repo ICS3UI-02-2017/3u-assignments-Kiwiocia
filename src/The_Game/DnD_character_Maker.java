@@ -59,6 +59,10 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextField11 = new javax.swing.JTextField();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
+        jTextField12 = new javax.swing.JTextField();
+        classChoice = new javax.swing.JComboBox();
+        jButton1 = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,15 +104,15 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(497, Short.MAX_VALUE))
+                .addContainerGap(531, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("The Cover", jPanel4);
 
-        jPanel1.setBackground(new java.awt.Color(239, 219, 148));
+        jPanel1.setBackground(new java.awt.Color(247, 235, 195));
 
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(239, 219, 148));
+        jTextArea1.setBackground(new java.awt.Color(247, 235, 195));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Adobe Garamond Pro", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
@@ -118,7 +122,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(239, 219, 148));
+        jTextField1.setBackground(new java.awt.Color(247, 235, 195));
         jTextField1.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 24)); // NOI18N
         jTextField1.setText("Welcome to Kiwiocia's DnD 5e Character Builder");
 
@@ -141,24 +145,24 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro", jPanel1);
 
-        jPanel3.setBackground(new java.awt.Color(239, 219, 148));
+        jPanel3.setBackground(new java.awt.Color(247, 235, 195));
 
         jTextField7.setEditable(false);
-        jTextField7.setBackground(new java.awt.Color(239, 219, 148));
+        jTextField7.setBackground(new java.awt.Color(247, 235, 195));
         jTextField7.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
         jTextField7.setText("How the Game is played");
 
         jTextArea4.setEditable(false);
-        jTextArea4.setBackground(new java.awt.Color(239, 219, 148));
+        jTextArea4.setBackground(new java.awt.Color(247, 235, 195));
         jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
+        jTextArea4.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("\t\n\tThe Game can be simple put into a three step back and forth communication between player \nand DM. Weither in combat or not, this basic formula is followed:\n\n\t1. The DM describes the enviroment \n\t\t(The land nearby, what enemies are doing, what the individual players can see\n\t\tthe DM also role plays at the characters in the setting)\n\t2. The players decide what they want to\n\t3. The DM narrates the result\n\nHere's a made up example:\nContext (There is a Barbarian, a Rogue, and a Druid walk into a tavern)\n(step 1)                   DM: \"you arrive at a tavern, no one is outside and the lights are on inside, it sounds \n                                        like there are a few people there\"\n(step 2) Barbarian's Player: \"I walk in\"\n                Rogue's player: \"same here\"\n                 Druid's player: \"me too\"\n(step 3)\t         DM: \"As you walk in you are greeted by a male tiefling barkeep\"\n(step 1)   DM as Barkeep: \"Welcome to the Tipsy Tiefling, we've got a few open rooms and plenty to drink. \n\t                  What can I get for you three?\"\n\nThis process reapeats for the whole game, a back and forth interaction between player and DM.\n           ");
+        jTextArea4.setText("\t\n\tThe Game can be simple put into a three step back and forth communication between \nplayer and DM. Weither in combat or not, this basic formula is followed:\n\n\t1. The DM describes the enviroment \n\t\t(The land nearby, what enemies are doing, what the individual players can \n\t\tsee the DM also role plays at the characters in the setting)\n\t2. The players decide what they want to\n\t3. The DM narrates the result\n\nHere's a made up example:\nContext (There is a Barbarian, a Rogue, and a Druid walk into a tavern)\n(step 1)                   DM: \"you arrive at a tavern, no one is outside and the lights are on inside, it sounds \n                                        like there are a few people there\"\n(step 2) Barbarian's Player: \"I walk in\"\n                Rogue's player: \"same here\"\n                 Druid's player: \"me too\"\n(step 3)\t         DM: \"As you walk in, you see about 6 people, 3 at one table, 2 at another, and one\n\t                  male elf sitting alone near the corner, a male tiefling barkeep greets you.\"\n(step 1)   DM as Barkeep: \"Welcome to the Tipsy Tiefling, we've got a few open rooms and plenty to drink. \n\t                 What can I get for you three?\"\n\nThis process reapeats for the whole game, a back and forth interaction between player and DM.\n           ");
         jScrollPane4.setViewportView(jTextArea4);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -168,9 +172,11 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(172, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 813, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,8 +184,8 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(430, Short.MAX_VALUE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 741, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(101, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro 2", jPanel3);
@@ -283,7 +289,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(271, Short.MAX_VALUE))
+                .addContainerGap(305, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Terms to know", jPanel2);
@@ -308,32 +314,54 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 642, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("How this works", jPanel6);
 
+        jTextField11.setEditable(false);
         jTextField11.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField11.setText("Classes: Broken down and explained");
 
+        jTextArea6.setEditable(false);
         jTextArea6.setColumns(20);
         jTextArea6.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 16)); // NOI18N
         jTextArea6.setRows(5);
-        jTextArea6.setText("\n\tBarbarian: A fierce warrior of a primitive background who can enter a battle rage,  Strength and \nConstitution, light and medium armor, shields, simple and martial weapons. They are a basic character Class that uses\nyour basic sword, axe, hammer, etc. As stated, they can enter a state of battle rage, which allows them to hit harder.\n\n\tBard: An inspiring magician whose power echoes the music of creation, Dexterity & Charisma, \nlight armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. Bards are an odd class, they are kinda\ngood at everything, but not amazing at anything.\n\n\tA priestly champion who wields divine magic in service of a higher power, d8, Wisdom & Charisma, \nlight and medium armor, shields, simple weapons. They are a blend of a beefy melee warior");
+        jTextArea6.setText("\n\tBarbarian: A fierce warrior of a primitive background who can enter a battle rage,  Strength and \nConstitution, light and medium armor, shields, simple and martial weapons. They are a basic character Class that uses\nyour basic sword, axe, hammer, etc. As stated, they can enter a state of battle rage, which allows them to hit harder.\n\n\tBard: An inspiring magician whose power echoes the music of creation, Dexterity & Charisma, \nlight armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. Bards are an odd class, they are kinda\ngood at everything, but not amazing at anything.\n\n\tCleric: A priestly champion who wields divine magic in service of a higher power, d8, Wisdom & \nCharisma, light and medium armor, shields, simple weapons. They are a blend of a difficult to kill melee warior, and a \nsupport healer.\n\n\tDruid: A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and\n lightning— and adopting animal forms, d8, Intelligence & Wisdom, light and medium armor (non-metal), shields \n(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, This class is odd, they can shapeshift. A mix of support\nand mage, more mage than support\n\n\tFighter: A master of martial combat, skilled with a variety of weapons and armours, d10, Strength & \nConstitution, all armor, shields, simple and martial weapons. About as basic as it gets really, fight is your Knight Class\nthe vaguard, the dragonslayer, everyone knows the fighter class, even if you don't play role playing games.\n\n\tMonk: A master of martial arts, skilled with fighting hands and martial monk weapons, d8, Dexterity \n& Strength (at level 14 monk is proficient in all Saving Throws) simple weapons, shortswords. Quite self explanitory,\njust think unarmmed fighting, Ki Powers, Think Karate Kid but like X10.\n\n\tPaladin: A holy warrior bound to a sacred oath, d10, Strength, Wisdom & Charisma, all armor, shields,\nsimple and martial weapons. Think Fighter Mixed with Cleric, Healing potenital, Lots of damage potential. \n\n\tRanger: A master of ranged combat, one with nature, d10, Dexterity & Strength, light and medium \narmor, shield, simple weapons, martial weapons. Archer class, you use bows and arrows, fight form a sitance, can\ncamoflauge yourself. Sneaky Snipers.\n\n\tRogue: A scoundrel and agile warrior who uses stealth and trickery to overcome obstacles and enemies,\n d8, Dexterity & Intelligence, light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. This is \nthe theif class, the assassin class, the one yo uplay when you don't follow the rules, play a more chaotic alightment.\n\n\tThe Last Three are your main spell casters, Sorcerer Wizzard and Warlock. They all come get their \nmasgical powers from different sources, The Sorcerer gets their power from a bloodline or some godly intervention at\nbirth, thier power is given to them at birth. A Wizzard gets their power form knowledge, they learn and write spells, \nthey practice their magic and learn from the books. A Warlock get's their power form a pact that the signed with one \nof three deities. \n\n\t");
         jScrollPane6.setViewportView(jTextArea6);
+
+        jTextField12.setEditable(false);
+        jTextField12.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField12.setText("Chose Your Class");
+
+        classChoice.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        classChoice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classChoiceActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Choose your Class");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane6)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 586, Short.MAX_VALUE))))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(325, 325, 325)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField12)
+                            .addComponent(classChoice, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -343,11 +371,30 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(classChoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(218, Short.MAX_VALUE))
         );
 
-        jTabbedPane2.addTab("tab2", jPanel7);
+        jTabbedPane2.addTab("Classes", jPanel7);
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 818, Short.MAX_VALUE)
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 866, Short.MAX_VALUE)
+        );
+
+        jTabbedPane2.addTab("", jPanel8);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -388,6 +435,10 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void classChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_classChoiceActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -424,6 +475,8 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox classChoice;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -431,6 +484,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -448,6 +502,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
