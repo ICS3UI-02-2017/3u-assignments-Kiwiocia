@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JInternalFrame" name="jInternalFrame1">
+      <Properties>
+        <Property name="visible" type="boolean" value="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -78,7 +98,7 @@
                               <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="218" max="32767" attributes="0"/>
+                      <EmptySpace pref="247" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -89,7 +109,7 @@
                       <Component id="jTextField8" min="-2" pref="61" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="jTextField9" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace pref="531" max="32767" attributes="0"/>
+                      <EmptySpace pref="599" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -152,7 +172,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
                       <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="173" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="202" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -163,7 +183,7 @@
                       <Component id="jTextField1" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="515" max="-2" attributes="0"/>
-                      <EmptySpace pref="273" max="32767" attributes="0"/>
+                      <EmptySpace pref="341" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -187,7 +207,7 @@
                       <Font name="Adobe Garamond Pro" size="18" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="&#xa;&#x9;This Program will aid in the creation of a character for Dungeons and Dragons Fifth&#xa;eddition. This program does not include any classes or races from the Expantion Packs &quot;Xanthar&apos;s&#xa;Guide to Everything&quot;, &quot;Sword Coast Adventurer&apos;s Guide&quot;, &quot;Dungeon Master&apos;s Guide&quot;, &quot;Elemental&#xa;Evil Player&apos;s Companion&quot;, &quot;Volo&apos;s Guide to Mosnters&quot;, &quot;Undearth Arcana&quot; or &quot;Out Of The Abyss&quot;&#xa;This character builder will also explain the basics of how Dungeons and Dragons is played&#xa;&#xa;&#x9;&#xa;&#x9;The Basics, to Quote from the player handbook:&#xa;&#xa;&#x9;Dungeons &amp; Dragons is a roleplaying board game about storytelling in worlds of swords and &#xa;sorcery. It shares elements with childhood games of make-believe. Like those games, D &amp; D is driven by &#xa;imagination. It&#x2019;s about picturing the towering castle beneath the stormy night sky and imagining how a fantasy&#xa;adventurer might react to the challenges that scene presents. Players roll dice to resolve whether their attacks &#xa;hit or miss or whether their adventurers can scale a cliff, roll away from the strike of a magical lightning bolt,&#xa;or pull off some other dangerous task. &#xa;&#xa;&#x9;In Dungeons &amp; Dragons, each player creates an adventurer (also called a character) and teams up&#xa; with other adventurers (played by friends).Working together, the group might explore a dark dungeon, a &#xa;ruined city, a haunted castle,or maybe a lost temple deep in a jungle.&#xa;&#xa;&#x9;One player, however, takes on the role of the Dungeon Master (DM), the game&#x2019;s lead storyteller&#xa;and referee. The DM creates adventures for the characters, who navigate its hazards and decide which paths to &#xa;explore. The DM might describe the entrance to Castle Ravenloft, and the players decide what they want their &#xa;adventurers to do. The DM determines the results of the adventurers&#x2019; actions and narrates what they experience.&#xa;&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="&#xa;&#x9;This Program will aid in the creation of a character for Dungeons and Dragons Fifth&#xa;eddition. This program does not include any classes or races from the Expantion Packs &quot;Xanthar&apos;s&#xa;Guide to Everything&quot;, &quot;Sword Coast Adventurer&apos;s Guide&quot;, &quot;Dungeon Master&apos;s Guide&quot;, &quot;Elemental&#xa;Evil Player&apos;s Companion&quot;, &quot;Volo&apos;s Guide to Mosnters&quot;, &quot;Undearth Arcana&quot; or &quot;Out Of The Abyss&quot;&#xa;This character builder will also explain the basics of how Dungeons and Dragons is played&#xa;&#xa;&#x9;&#xa;&#x9;The Basics, to Quote from the player handbook (the book is reffered to as &quot;PH&quot;):&#xa;&#xa;&#x9;Dungeons &amp; Dragons is a roleplaying board game about storytelling in worlds of swords and &#xa;sorcery. It shares elements with childhood games of make-believe. Like those games, D &amp; D is driven by &#xa;imagination. It&#x2019;s about picturing the towering castle beneath the stormy night sky and imagining how a fantasy&#xa;adventurer might react to the challenges that scene presents. Players roll dice to resolve whether their attacks &#xa;hit or miss or whether their adventurers can scale a cliff, roll away from the strike of a magical lightning bolt,&#xa;or pull off some other dangerous task. &#xa;&#xa;&#x9;In Dungeons &amp; Dragons, each player creates an adventurer (also called a character) and teams up&#xa; with other adventurers (played by friends).Working together, the group might explore a dark dungeon, a &#xa;ruined city, a haunted castle,or maybe a lost temple deep in a jungle.&#xa;&#xa;&#x9;One player, however, takes on the role of the Dungeon Master (DM), the game&#x2019;s lead storyteller&#xa;and referee. The DM creates adventures for the characters, who navigate its hazards and decide which paths to &#xa;explore. The DM might describe the entrance to Castle Ravenloft, and the players decide what they want their &#xa;adventurers to do. The DM determines the results of the adventurers&#x2019; actions and narrates what they experience.&#xa;&#xa;"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
@@ -236,7 +256,7 @@
                               <Component id="jTextField7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane4" pref="813" max="32767" attributes="0"/>
+                          <Component id="jScrollPane4" pref="842" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -249,7 +269,7 @@
                       <Component id="jTextField7" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane4" min="-2" pref="741" max="-2" attributes="0"/>
-                      <EmptySpace pref="101" max="32767" attributes="0"/>
+                      <EmptySpace pref="169" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -292,6 +312,72 @@
             </Container>
           </SubComponents>
         </Container>
+        <Container class="javax.swing.JPanel" name="jPanel10">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Intro Spell Slots">
+                <Property name="tabTitle" type="java.lang.String" value="Intro Spell Slots"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Component id="jScrollPane7" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jTextField34" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="246" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField34" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane7" min="-2" pref="739" max="-2" attributes="0"/>
+                      <EmptySpace pref="162" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JTextField" name="jTextField34">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Adobe Caslon Pro" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Spell Casting and Spell Slots: This one&apos;s a doozy, I&apos;ll let the &quot;PH&quot; speak for me"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea7">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -309,7 +395,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
@@ -320,7 +406,7 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
                                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                              <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jTextField10" min="-2" pref="96" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Component id="jTextField4" max="32767" attributes="0"/>
@@ -343,7 +429,7 @@
                               <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="104" max="32767" attributes="0"/>
+                      <EmptySpace pref="133" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -366,7 +452,7 @@
                       <Component id="jScrollPane2" min="-2" pref="266" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="305" max="32767" attributes="0"/>
+                      <EmptySpace pref="373" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -531,7 +617,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane5" pref="798" max="32767" attributes="0"/>
+                              <Component id="jScrollPane5" pref="827" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -541,7 +627,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane5" min="-2" pref="642" max="-2" attributes="0"/>
-                              <EmptySpace pref="213" max="32767" attributes="0"/>
+                              <EmptySpace pref="281" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -561,7 +647,7 @@
                               <Font name="Adobe Caslon Pro" size="18" style="0"/>
                             </Property>
                             <Property name="rows" type="int" value="5"/>
-                            <Property name="text" type="java.lang.String" value="&#x9;&#xa;&#x9;Making a character in dungeons and dragons is a seemingly complicated and lengthy &#xa;process that can intimidate new players that are used to the normal RPG character maker, where all the &#xa;presets and what you want are just given quickly without any math being performed. The Whole point of&#xa;this program to make that lengthly process much quicker.&#xa;&#xa;&#x9;So here are the Basics of character building:&#xa;&#xa;&#x9;First, off You&apos;ll need 4 D6, 4 Six-Sided Die, This will be needed to determine your&#xa;character&apos;s ability scores. You&apos;ll first decide your race (as in like species as a whole), your class, and then&#xa;your background. The player handbook (PH) recommends this order of making a character.&#xa;    &#xa;&#x9;&#x9;     That is a dumb approach&#xa;&#xa;&#x9;The better method of doing this is to decide your Class first, this is because the class&#xa;that you choose is more effective with certain ability scores being higher than others (ex Rogues are &#xa;better if they have a higher Dexterity score, Paladins are better with Constitution and Strength, etc). &#xa;This means that if you know which class you want, then deciding the right race is much easier because&#xa;each race as certain proficiencies and bonuses to ability scores (ex Dwarves get bonuses to constitution, &#xa;so they would make for better paladins than they would, say, a wizard). Then finishing off with&#xa;background because background is more useful to your character as a story background. Yes, it is highly&#xa;recommended that you have a background story for your character. It&apos;s quite helpful and easier to roleplay&#xa;a character that has a purpose that they search for, it just in general make the game much more fun to&#xa;play."/>
+                            <Property name="text" type="java.lang.String" value="&#x9;&#xa;&#x9;Making a character in dungeons and dragons is a seemingly complicated and lengthy &#xa;process that can intimidate new players that are used to the normal RPG character maker, where all the &#xa;presets and what you want are just given quickly without any math being performed. The Whole point of&#xa;this program to make that lengthly process much quicker.&#xa;&#xa;&#x9;So here are the Basics of character building:&#xa;&#xa;&#x9;First, off You&apos;ll need 4 D6, 4 Six-Sided Die, This will be needed to determine your&#xa;character&apos;s ability scores. You&apos;ll first decide your race (as in like species as a whole), your class, and then&#xa;your background. The player handbook (PH) recommends this order of making a character.&#xa;    &#xa;&#x9;&#x9;     That is a dumb approach&#xa;&#xa;&#x9;The better method of doing this is to decide your Class first, this is because the class&#xa;that you choose is more effective with certain ability scores being higher than others (ex Rogues are &#xa;better if they have a higher Dexterity score, Paladins are better with Constitution and Strength, etc). &#xa;This means that if you know which class you want, then deciding the right race is much easier because&#xa;each race as certain proficiencies and bonuses to ability scores (ex Dwarves get bonuses to constitution, &#xa;so they would make for better paladins than they would, say, a wizard, but there is nothing stopping you&#xa;from doing that). Then finishing off with background because background is more useful to your character&#xa; as a story background. Yes, it is highly recommended that you have a background story for your character.&#xa;It&apos;s quite helpful and easier to roleplay a character that has a purpose that they search for. It&apos;s just makes &#xa;the game easier and more fun to play."/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -588,16 +674,24 @@
                                           <Component id="jScrollPane6" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
                                               <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="586" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="615" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField12" max="32767" attributes="0"/>
-                                          <Component id="classChoice" max="32767" attributes="0"/>
-                                          <Component id="jButton1" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="classDone" min="-2" pref="149" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="jTextField12" max="32767" attributes="0"/>
+                                                  <Component id="classChoice" max="32767" attributes="0"/>
+                                                  <Component id="classChoiceButton" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
@@ -618,8 +712,10 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="classChoice" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="218" max="32767" attributes="0"/>
+                              <Component id="classChoiceButton" min="-2" pref="23" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="classDone" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="258" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -649,7 +745,7 @@
                               <Font name="Adobe Caslon Pro" size="16" style="0"/>
                             </Property>
                             <Property name="rows" type="int" value="5"/>
-                            <Property name="text" type="java.lang.String" value="&#xa;&#x9;Barbarian: A fierce warrior of a primitive background who can enter a battle rage,  Strength and &#xa;Constitution, light and medium armor, shields, simple and martial weapons. They are a basic character Class that uses&#xa;your basic sword, axe, hammer, etc. As stated, they can enter a state of battle rage, which allows them to hit harder.&#xa;&#xa;&#x9;Bard: An inspiring magician whose power echoes the music of creation, Dexterity &amp; Charisma, &#xa;light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. Bards are an odd class, they are kinda&#xa;good at everything, but not amazing at anything.&#xa;&#xa;&#x9;Cleric: A priestly champion who wields divine magic in service of a higher power, d8, Wisdom &amp; &#xa;Charisma, light and medium armor, shields, simple weapons. They are a blend of a difficult to kill melee warior, and a &#xa;support healer.&#xa;&#xa;&#x9;Druid: A priest of the Old Faith, wielding the powers of nature &#x2014; moonlight and plant growth, fire and&#xa; lightning&#x2014; and adopting animal forms, d8, Intelligence &amp; Wisdom, light and medium armor (non-metal), shields &#xa;(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, This class is odd, they can shapeshift. A mix of support&#xa;and mage, more mage than support&#xa;&#xa;&#x9;Fighter: A master of martial combat, skilled with a variety of weapons and armours, d10, Strength &amp; &#xa;Constitution, all armor, shields, simple and martial weapons. About as basic as it gets really, fight is your Knight Class&#xa;the vaguard, the dragonslayer, everyone knows the fighter class, even if you don&apos;t play role playing games.&#xa;&#xa;&#x9;Monk: A master of martial arts, skilled with fighting hands and martial monk weapons, d8, Dexterity &#xa;&amp; Strength (at level 14 monk is proficient in all Saving Throws) simple weapons, shortswords. Quite self explanitory,&#xa;just think unarmmed fighting, Ki Powers, Think Karate Kid but like X10.&#xa;&#xa;&#x9;Paladin: A holy warrior bound to a sacred oath, d10, Strength, Wisdom &amp; Charisma, all armor, shields,&#xa;simple and martial weapons. Think Fighter Mixed with Cleric, Healing potenital, Lots of damage potential. &#xa;&#xa;&#x9;Ranger: A master of ranged combat, one with nature, d10, Dexterity &amp; Strength, light and medium &#xa;armor, shield, simple weapons, martial weapons. Archer class, you use bows and arrows, fight form a sitance, can&#xa;camoflauge yourself. Sneaky Snipers.&#xa;&#xa;&#x9;Rogue: A scoundrel and agile warrior who uses stealth and trickery to overcome obstacles and enemies,&#xa; d8, Dexterity &amp; Intelligence, light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. This is &#xa;the theif class, the assassin class, the one yo uplay when you don&apos;t follow the rules, play a more chaotic alightment.&#xa;&#xa;&#x9;The Last Three are your main spell casters, Sorcerer Wizzard and Warlock. They all come get their &#xa;masgical powers from different sources, The Sorcerer gets their power from a bloodline or some godly intervention at&#xa;birth, thier power is given to them at birth. A Wizzard gets their power form knowledge, they learn and write spells, &#xa;they practice their magic and learn from the books. A Warlock get&apos;s their power form a pact that the signed with one &#xa;of three deities. &#xa;&#xa;&#x9;"/>
+                            <Property name="text" type="java.lang.String" value="&#xa;&#x9;Barbarian: A fierce warrior of a primitive background who can enter a battle rage,  Strength and &#xa;Constitution, light and medium armor, shields, simple and martial weapons. They are a basic character Class that uses&#xa;your basic sword, axe, hammer, etc. As stated, they can enter a state of battle rage, which allows them to hit harder.&#xa;&#xa;&#x9;Bard: An inspiring magician whose power echoes the music of creation, Dexterity &amp; Charisma, &#xa;light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. Bards are an odd class, they are kinda&#xa;good at everything, but not amazing at anything.&#xa;&#xa;&#x9;Cleric: A priestly champion who wields divine magic in service of a higher power, d8, Wisdom &amp; &#xa;Charisma, light and medium armor, shields, simple weapons. They are a blend of a difficult to kill melee warior, and a &#xa;support healer.&#xa;&#xa;&#x9;Druid: A priest of the Old Faith, wielding the powers of nature &#x2014; moonlight and plant growth, fire and&#xa; lightning&#x2014; and adopting animal forms, d8, Intelligence &amp; Wisdom, light and medium armor (non-metal), shields &#xa;(non-metal), clubs, daggers, darts, javelins, maces, quarterstaffs, This class is odd, they can shapeshift. A mix of support&#xa;and mage, more mage than support&#xa;&#xa;&#x9;Fighter: A master of martial combat, skilled with a variety of weapons and armours, d10, Strength &amp; &#xa;Constitution, all armor, shields, simple and martial weapons. About as basic as it gets really, fight is your Knight Class&#xa;the vaguard, the dragonslayer, everyone knows the fighter class, even if you don&apos;t play role playing games.&#xa;&#xa;&#x9;Monk: A master of martial arts, skilled with fighting hands and martial monk weapons, d8, Dexterity &#xa;&amp; Strength (at level 14 monk is proficient in all Saving Throws) simple weapons, shortswords. Quite self explanitory,&#xa;just think unarmmed fighting, Ki Powers, Think Karate Kid but like X10.&#xa;&#xa;&#x9;Paladin: A holy warrior bound to a sacred oath, d10, Strength, Wisdom &amp; Charisma, all armor, shields,&#xa;simple and martial weapons. Think Fighter Mixed with Cleric, Healing potenital, Lots of damage potential. &#xa;&#xa;&#x9;Ranger: A master of ranged combat, one with nature, d10, Dexterity &amp; Strength, light and medium &#xa;armor, shield, simple weapons, martial weapons. Archer class, you use bows and arrows, fight form a sitance, can&#xa;camoflauge yourself. Sneaky Snipers.&#xa;&#xa;&#x9;Rogue: A scoundrel and agile warrior who uses stealth and trickery to overcome obstacles and enemies,&#xa; d8, Dexterity &amp; Intelligence, light armor, simple weapons, hand crossbows, longswords, rapiers, shortswords. This is &#xa;the theif class, the assassin class, the one yo uplay when you don&apos;t follow the rules, play a more chaotic aligntment.&#xa;&#xa;&#x9;The Last Three are your main spell casters, Sorcerer Wizzard and Warlock. They all come get their &#xa;masgical powers from different sources, The Sorcerer gets their power from a bloodline or some godly intervention at&#xa;birth, thier power is given to them at birth. A Wizzard gets their power form knowledge, they learn and write spells, &#xa;they practice their magic and learn from the books. A Warlock get&apos;s their power form a pact that the signed with one &#xa;of three deities. &#xa;&#xa;&#x9;"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -665,6 +761,196 @@
                     </Component>
                     <Component class="javax.swing.JComboBox" name="classChoice">
                       <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="12">
+                            <StringItem index="0" value="Barbarian"/>
+                            <StringItem index="1" value="Bard"/>
+                            <StringItem index="2" value="Cleric"/>
+                            <StringItem index="3" value="Druid"/>
+                            <StringItem index="4" value="Fighter"/>
+                            <StringItem index="5" value="Monk "/>
+                            <StringItem index="6" value="Paladin"/>
+                            <StringItem index="7" value="Ranger"/>
+                            <StringItem index="8" value="Rogue"/>
+                            <StringItem index="9" value="Sorcerer"/>
+                            <StringItem index="10" value="Warlock"/>
+                            <StringItem index="11" value="Wizzard"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classChoiceActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="classChoiceButton">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Choose your Class"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classChoiceButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="classDone">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel9">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Classes part 2">
+                        <Property name="tabTitle" type="java.lang.String" value="Classes part 2"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextField26" alignment="0" pref="837" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jTextField27" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="308" max="-2" attributes="0"/>
+                                              <Component id="jTextField28" min="-2" pref="127" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jTextField25" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Component id="classData" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jTextField29" min="-2" pref="66" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                              <Component id="jTextField30" min="-2" pref="46" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                              <Component id="jTextField31" min="-2" pref="90" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="jTextField32" min="-2" pref="43" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                              <Component id="jTextField33" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Component id="classWeapon" min="-2" pref="84" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="classArmor" min="-2" pref="74" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="classRWeapon" min="-2" pref="98" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="classTools" min="-2" pref="65" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="classTProf" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                              <Component id="classSV" min="-2" pref="321" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField25" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="classData" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jTextField26" min="-2" pref="38" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField28" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="classSV" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="classTProf" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField32" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField33" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="classWeapon" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="classArmor" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="classRWeapon" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="classTools" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="719" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="jTextField25">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="This part is dependant on part 1 so you need to finsh that first, if you did, press the button -&gt; "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField26">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="16" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Each Class starts with some equipment, weapons, armor, proficeincies and spells if you are a spellcaster. You get to choose these."/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField27">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tools Proficeincies"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField28">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Saving Throws"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="classSV">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="jTextField29"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField29">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Weapons"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="classWeapon">
+                      <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="4">
                             <StringItem index="0" value="Item 1"/>
@@ -675,12 +961,70 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classChoiceActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classWeaponActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton1">
+                    <Component class="javax.swing.JTextField" name="jTextField30">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Choose your Class"/>
+                        <Property name="text" type="java.lang.String" value="Armor"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="classArmor">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField31">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Other Weapons"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="classRWeapon">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField32">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tools"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="classTools">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="classData">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Get Class data"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="classTProf">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField33">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="jTextField33"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -688,8 +1032,8 @@
                 <Container class="javax.swing.JPanel" name="jPanel8">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="">
-                        <Property name="tabTitle" type="java.lang.String" value=""/>
+                      <JTabbedPaneConstraints tabName="Your Chacater So Far">
+                        <Property name="tabTitle" type="java.lang.String" value="Your Chacater So Far"/>
                       </JTabbedPaneConstraints>
                     </Constraint>
                   </Constraints>
@@ -697,15 +1041,229 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="818" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextField13" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jTextField16" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jTextField14" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                                                          <Group type="102" attributes="0">
+                                                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                                      <Component id="charClass" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                                                                      <Component id="charName" min="-2" pref="142" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <Component id="charRace" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="102" attributes="0">
+                                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                                              <Component id="charEquip" min="-2" pref="131" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                                  <Component id="jTextField18" min="-2" pref="65" max="-2" attributes="0"/>
+                                                                  <Group type="102" attributes="0">
+                                                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                                                      <Component id="charSpells" min="-2" pref="131" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <Component id="jTextField20" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                                                                  <Component id="jTextField19" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <Group type="102" attributes="0">
+                                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                                              <Component id="charProf" min="-2" pref="131" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                                  <Component id="jTextField15" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                                                  <Component id="jTextField17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jTextField23" min="-2" pref="79" max="-2" attributes="0"/>
+                                                  <Component id="jTextField21" min="-2" pref="83" max="-2" attributes="0"/>
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jTextField22" min="-2" pref="135" max="-2" attributes="0"/>
+                                                          <Component id="jTextField24" min="-2" pref="125" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="45" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="866" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField13" min="-2" pref="44" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField16" min="-2" pref="33" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField23" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextField24" pref="37" max="32767" attributes="0"/>
+                                  <Component id="charEquip" max="32767" attributes="0"/>
+                                  <Component id="charName" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField20" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="charProf" alignment="0" pref="64" max="32767" attributes="0"/>
+                                  <Component id="charClass" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField21" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jTextField22" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="charSpells" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Component id="charRace" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="545" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="jTextField13">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="18" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="If you haven&apos;t chosen your Class, race, background and name yet, switch to the tabs above and do so."/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Your Name"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charName">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField16">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="To get your character sheet, take the info here and then go into the files here and find your according class, then fill out the stats from here."/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField15">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Your Class"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charClass">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField17">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Your Race"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charRace">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField18">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Weapons"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charEquip">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField20">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Proficeincies"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charProf">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField19">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Spells at lvl 1"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="charSpells">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField21">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cantrips"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField21ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField22">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField22ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField23">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Armor"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField24">
+                    </Component>
+                  </SubComponents>
                 </Container>
               </SubComponents>
             </Container>
