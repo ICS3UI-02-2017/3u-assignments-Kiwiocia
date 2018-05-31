@@ -109,7 +109,7 @@
                       <Component id="jTextField8" min="-2" pref="61" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="jTextField9" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace pref="599" max="32767" attributes="0"/>
+                      <EmptySpace pref="616" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -183,7 +183,7 @@
                       <Component id="jTextField1" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="515" max="-2" attributes="0"/>
-                      <EmptySpace pref="341" max="32767" attributes="0"/>
+                      <EmptySpace pref="358" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -269,7 +269,7 @@
                       <Component id="jTextField7" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane4" min="-2" pref="741" max="-2" attributes="0"/>
-                      <EmptySpace pref="169" max="32767" attributes="0"/>
+                      <EmptySpace pref="186" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -333,7 +333,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jTextField34" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="246" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="214" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -347,7 +347,7 @@
                       <Component id="jTextField34" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane7" min="-2" pref="739" max="-2" attributes="0"/>
-                      <EmptySpace pref="162" max="32767" attributes="0"/>
+                      <EmptySpace pref="179" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -358,7 +358,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Adobe Caslon Pro" size="18" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Spell Casting and Spell Slots: This one&apos;s a doozy, I&apos;ll let the &quot;PH&quot; speak for me"/>
+                <Property name="text" type="java.lang.String" value="Spell Casting and Spell Slots: This one&apos;s a doozy, I&apos;ll let the Rulebook speak for me"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane7">
@@ -371,7 +371,11 @@
                 <Component class="javax.swing.JTextArea" name="jTextArea7">
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Adobe Caslon Pro" size="18" style="0"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="&#x9;&#xa;&#x9;Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or&#xa;must have access to the spell in a magic item. Members o f a few classes, including bards and sorcerers, have a &#xa;limited list of spells they know that are always fixed in mind. Thesame thing is true of many magic-using &#xa;monsters. Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process &#xa;varies for different classes, as detailed in their descriptions.&#xa;&#x9;Regardless of how many spells a caster knows or prepares, he or she can cast only a limited &#xa;num ber of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple&#xa;spell is physically and mentally taxing, and higher-level spells are even m ore so. Thus, each spellcasting&#xa;class&#x2019;s description (except that of the warlock) includes a table showing how many spell slots of each spell&#xa;level a character can use at each character level. For example, the 3rd-level wizard Umara has four 1st-level &#xa;spell slots and two 2nd-level slots. When a character casts a spell, he or she expends a slot of that spell&#x2019;s &#xa;level or higher, effectively &#x201c;filling&#x201d; a slot with the spell. You can think of a spell slot as a groove of a certain&#xa;size&#x2014;small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, &#xa;but a 9th-level spell fits only in a 9th-level slot. So when Umara casts magic missile, a 1st-level spell, she &#xa;spends one of her four 1st-level slots and has three remaining.&#xa;&#xa;&#x9;TL;DR, If you are a spell caster there is a limmit to how many spells you can have prepared,&#xa;you get to decide this after every long rest, unless you are a bard or a sorcerer, which always have a set number&#xa;of spells ready at any given moment.  Also, when a spell is casted at a higher level then that of the actual spell,&#xa;ex, fireball, a lvl 3 spell, casted using a lvl 4 spell, would make the spell more powerful or have more effects."/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -452,7 +456,7 @@
                       <Component id="jScrollPane2" min="-2" pref="266" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="373" max="32767" attributes="0"/>
+                      <EmptySpace pref="390" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -627,7 +631,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane5" min="-2" pref="642" max="-2" attributes="0"/>
-                              <EmptySpace pref="281" max="32767" attributes="0"/>
+                              <EmptySpace pref="298" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -715,7 +719,7 @@
                               <Component id="classChoiceButton" min="-2" pref="23" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="classDone" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="258" max="32767" attributes="0"/>
+                              <EmptySpace pref="275" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -907,7 +911,7 @@
                                       <Component id="classTools" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="719" max="32767" attributes="0"/>
+                              <EmptySpace pref="736" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -940,9 +944,6 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="classSV">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="jTextField29"/>
-                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTextField29">
                       <Properties>
@@ -1152,7 +1153,7 @@
                                   <Component id="charSpells" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                                   <Component id="charRace" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="545" max="32767" attributes="0"/>
+                              <EmptySpace pref="562" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
