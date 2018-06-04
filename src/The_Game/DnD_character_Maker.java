@@ -10,7 +10,7 @@ package The_Game;
  * @author Kiwiocia
  */
 public class DnD_character_Maker extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form DnD_character_Maker
      */
@@ -158,7 +158,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(616, Short.MAX_VALUE))
+                .addContainerGap(633, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("The Cover", jPanel4);
@@ -199,7 +199,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(358, Short.MAX_VALUE))
+                .addContainerGap(375, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro", jPanel1);
@@ -239,7 +239,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 741, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(203, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro 2", jPanel3);
@@ -250,7 +250,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextArea7.setColumns(20);
         jTextArea7.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
         jTextArea7.setRows(5);
-        jTextArea7.setText("\t\n\tBefore a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or\nmust have access to the spell in a magic item. Members o f a few classes, including bards and sorcerers, have a \nlimited list of spells they know that are always fixed in mind. Thesame thing is true of many magic-using \nmonsters. Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process \nvaries for different classes, as detailed in their descriptions.\n\tRegardless of how many spells a caster knows or prepares, he or she can cast only a limited \nnum ber of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple\nspell is physically and mentally taxing, and higher-level spells are even m ore so. Thus, each spellcasting\nclass’s description (except that of the warlock) includes a table showing how many spell slots of each spell\nlevel a character can use at each character level. For example, the 3rd-level wizard Umara has four 1st-level \nspell slots and two 2nd-level slots. When a character casts a spell, he or she expends a slot of that spell’s \nlevel or higher, effectively “filling” a slot with the spell. You can think of a spell slot as a groove of a certain\nsize—small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, \nbut a 9th-level spell fits only in a 9th-level slot. So when Umara casts magic missile, a 1st-level spell, she \nspends one of her four 1st-level slots and has three remaining.\n\n\tTL;DR, If you are a spell caster there is a limmit to how many spells you can have prepared,\nyou get to decide this after every long rest, unless you are a bard or a sorcerer, which always have a set number\nof spells ready at any given moment.  Also, when a spell is casted at a higher level then that of the actual spell,\nex, fireball, a lvl 3 spell, casted using a lvl 4 spell, would make the spell more powerful or have more effects.");
+        jTextArea7.setText("\t\n\tBefore a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or\nmust have access to the spell in a magic item. Members o f a few classes, including bards and sorcerers, have a \nlimited list of spells they know that are always fixed in mind. Thesame thing is true of many magic-using \nmonsters. Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process \nvaries for different classes, as detailed in their descriptions.\n\tRegardless of how many spells a caster knows or prepares, he or she can cast only a limited \nnum ber of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple\nspell is physically and mentally taxing, and higher-level spells are even m ore so. Thus, each spellcasting\nclass’s description (except that of the warlock) includes a table showing how many spell slots of each spell\nlevel a character can use at each character level. For example, the 3rd-level wizard Umara has four 1st-level \nspell slots and two 2nd-level slots. When a character casts a spell, he or she expends a slot of that spell’s \nlevel or higher, effectively “filling” a slot with the spell. You can think of a spell slot as a groove of a certain\nsize—small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, \nbut a 9th-level spell fits only in a 9th-level slot. So when Umara casts magic missile, a 1st-level spell, she \nspends one of her four 1st-level slots and has three remaining.\n\n\tTL;DR, If you are a spell caster there is a limmit to how many spells you can have ready in a \nday you get to decide this after every long rest, unless you are a bard or a sorcerer, which always have a set \nnumber of spells ready at any given moment.  Also, when a spell is casted at a higher level then that of the \nactual spell, ex, fireball, a lvl 3 spell, casted using a lvl 4 spell slot, would make the spell more powerful or \nhave more effects.");
         jScrollPane7.setViewportView(jTextArea7);
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -275,7 +275,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro Spell Slots", jPanel10);
@@ -379,7 +379,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(390, Short.MAX_VALUE))
+                .addContainerGap(407, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Terms to know", jPanel2);
@@ -404,7 +404,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 642, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(298, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("How this works", jPanel6);
@@ -485,7 +485,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(classChoiceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(classDone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(275, Short.MAX_VALUE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes", jPanel7);
@@ -522,6 +522,11 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         classTools.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         classData.setText("Get Class data");
+        classData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classDataActionPerformed(evt);
+            }
+        });
 
         jTextField33.setText("jTextField33");
 
@@ -535,10 +540,6 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(308, 308, 308)
-                                .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(28, 28, 28)
@@ -566,7 +567,11 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                                         .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(classTProf))
                                 .addGap(35, 35, 35)
-                                .addComponent(classSV, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(classSV, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(288, 288, 288)
+                                .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -601,7 +606,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                         .addComponent(classArmor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(classRWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(736, Short.MAX_VALUE))
+                .addContainerGap(753, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes part 2", jPanel9);
@@ -742,7 +747,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(charSpells, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(charRace, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(562, Short.MAX_VALUE))
+                .addContainerGap(579, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Your Chacater So Far", jPanel8);
@@ -781,7 +786,43 @@ public class DnD_character_Maker extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    public void barbarian(){
+        
+    }
+    public void bard(){
+        
+    }
+    public void cleric(){
+        
+    }
+    public void druid(){
+        
+    }
+    public void fighter(){
+        
+    }
+    public void monk(){
+        
+    }
+    public void paladin(){
+        
+    }
+    public void ranger(){
+        
+    }
+    public void rogue(){
+        
+    }
+    public void sorcerer(){
+        
+    }
+    public void warlock(){
+        
+    }
+    public void wizzard(){
+        
+    }
+    
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
@@ -791,6 +832,44 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     }//GEN-LAST:event_classChoiceActionPerformed
 
     private void classChoiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceButtonActionPerformed
+        if (classChoice.getSelectedItem().toString().equals("Barbarian"));{
+        barbarian();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Bard"));{
+        bard();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Cleric"));{
+        cleric();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Druid"));{
+        druid();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Fighter"));{
+        fighter();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Monk"));{
+        monk();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Paladin"));{
+        paladin();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Ranger"));{
+        ranger();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Rogue"));{
+        rogue();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Sorcerer"));{
+        sorcerer();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Warlock"));{
+        warlock();
+    }
+        if (classChoice.getSelectedItem().toString().equals("Wizzard"));{
+        wizzard();
+    }
+        
+
         charClass.setText(classChoice.getSelectedItem().toString());
         classDone.setText("Done! Go to Classes 2");
     }//GEN-LAST:event_classChoiceButtonActionPerformed
@@ -806,6 +885,14 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private void classWeaponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classWeaponActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_classWeaponActionPerformed
+
+    private void classDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classDataActionPerformed
+        // TODO add your handling code here:
+        //513-523, set the combo box options to a certain variable
+        if (classChoice.getSelectedItem().toString()==("Barbarian")){
+            classTProf.setText("meme");
+        }
+    }//GEN-LAST:event_classDataActionPerformed
 
     /**
      * @param args the command line arguments
