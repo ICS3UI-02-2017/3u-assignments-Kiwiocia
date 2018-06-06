@@ -10,7 +10,22 @@ package The_Game;
  * @author Kiwiocia
  */
 public class DnD_character_Maker extends javax.swing.JFrame {
-    
+    //set up some variables for the combo boxes
+
+    String classArmor1;
+    String classArmor2;
+    String classArmor3;
+    String classWeapon1;
+    String classWeapon2;
+    String classWeapon3;
+    String classRWeapon1;
+    String classRWeapon2;
+    String classRWeapon3;
+    String classTools1;
+    String classTools2;
+    String classSV1;
+    String classTProff;
+
     /**
      * Creates new form DnD_character_Maker
      */
@@ -68,6 +83,23 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         classChoice = new javax.swing.JComboBox();
         classChoiceButton = new javax.swing.JButton();
         classDone = new javax.swing.JTextField();
+        jPanel11 = new javax.swing.JPanel();
+        jTextField33 = new javax.swing.JTextField();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextArea8 = new javax.swing.JTextArea();
+        jTextField35 = new javax.swing.JTextField();
+        jTextField36 = new javax.swing.JTextField();
+        jTextField37 = new javax.swing.JTextField();
+        jTextField38 = new javax.swing.JTextField();
+        jTextField39 = new javax.swing.JTextField();
+        jTextField40 = new javax.swing.JTextField();
+        classStr = new javax.swing.JTextField();
+        classDex = new javax.swing.JTextField();
+        classCon = new javax.swing.JTextField();
+        classCha = new javax.swing.JTextField();
+        classWis = new javax.swing.JTextField();
+        classInt = new javax.swing.JTextField();
+        classAbSc = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jTextField25 = new javax.swing.JTextField();
         jTextField26 = new javax.swing.JTextField();
@@ -84,7 +116,6 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         classTools = new javax.swing.JComboBox();
         classData = new javax.swing.JButton();
         classTProf = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -158,7 +189,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(633, Short.MAX_VALUE))
+                .addContainerGap(667, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("The Cover", jPanel4);
@@ -199,7 +230,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(375, Short.MAX_VALUE))
+                .addContainerGap(409, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro", jPanel1);
@@ -239,7 +270,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 741, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap(237, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro 2", jPanel3);
@@ -275,7 +306,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro Spell Slots", jPanel10);
@@ -379,7 +410,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(441, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Terms to know", jPanel2);
@@ -404,7 +435,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 642, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(349, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("How this works", jPanel6);
@@ -485,10 +516,149 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(classChoiceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(classDone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(292, Short.MAX_VALUE))
+                .addContainerGap(326, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes", jPanel7);
+
+        jTextField33.setEditable(false);
+        jTextField33.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField33.setText("NOW, before both you and I jump the gun");
+        jTextField33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField33ActionPerformed(evt);
+            }
+        });
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextArea8.setRows(5);
+        jTextArea8.setText("\n\tWe need to fist figure out your Ability Scores, there are 2 methods of doing this.\n\na). We set your stats from a predecided list that the creators of the game decided was ok, and then plug \n     those numbers in. Those Numbers are 15, 14, 13, 12, 10, 8. \n\nb).We do the rolling method (more fun), here's what you do, get those 4 D6 we spoke about earlier. \n    roll all 4 at the same time, and then remove the lowest dice, then add them up. It'll look like this:\n    I roll a 6,5,3,1 the result should be 14 because the 1 is removed because it is the lowest number. a few\n    more examples: 4,3,2,4 = 11, 2 gets removed. 1,1,1,1, oof, low rolls all around, that's a 3. I think you get \n    the point. Do this 8 times, and get rid of the 2 lowest values, ex: 15, 16, 12, 10, 16, 8, 3, 4, you get left\n    with 15, 16, 12, 10, 16, 8,\n\n\tOnce you either roll or decide your  values, you assign them according to what class you \n\twant. \n\tHere's a table for the recommended ability scores that should be your highest.\n   Barbarian: Strength, followed by Constituion.\n   Bard: Charisma, followed by Dexterity\n   Cleric: Wisdom, followed by either, Strength or Constitution\n   Druid: Wisdom followed by Constitution\n   Fighter: Either Strength or Dex, followed by either Constitution or Intelligence\n   Monk: Dex followed By Wisdom\n   Paladin: Strength followed by Wisdom\n   Ranger: Dex followed By Wisdom\n   Rogue: Dex followed by either Intelligence or Charisma\n   Sorcerer: Charisma followed by Constitution.\n   Warlock: Charisma followed by Constituition\n   Wizzard: Intelligence followed by either Constitution or Dexterity\n\n\tAlrighty, go set your scores in at the bottom. Also, you may be tempted to cheat the rolls,\n\twhile I do understand that having a 3 may suck, tremendously, it's often times more fun\n\tto play a characte with a severe flaw. Imagine a wizzard that can destroy anything with\n\this magic, but can't for his life carry his own tomes and scrolls\n");
+        jScrollPane8.setViewportView(jTextArea8);
+
+        jTextField35.setEditable(false);
+        jTextField35.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField35.setText("Strength");
+
+        jTextField36.setEditable(false);
+        jTextField36.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField36.setText("Dexterity");
+
+        jTextField37.setEditable(false);
+        jTextField37.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField37.setText("Constitution");
+        jTextField37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField37ActionPerformed(evt);
+            }
+        });
+
+        jTextField38.setEditable(false);
+        jTextField38.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField38.setText("Intelligence");
+
+        jTextField39.setEditable(false);
+        jTextField39.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField39.setText("Wisdom");
+        jTextField39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField39ActionPerformed(evt);
+            }
+        });
+
+        jTextField40.setEditable(false);
+        jTextField40.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
+        jTextField40.setText("Charisma");
+
+        classAbSc.setText("Lock those number in");
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane8)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classStr)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classDex))
+                                    .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classCon, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classCha, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classWis, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel11Layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(classInt, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 162, Short.MAX_VALUE)))))
+                .addContainerGap())
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(342, 342, 342)
+                .addComponent(classAbSc)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(classStr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classDex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classCon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classCha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classInt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classWis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addComponent(classAbSc)
+                .addContainerGap(149, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("First Thing is First though", jPanel11);
 
         jTextField25.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         jTextField25.setText("This part is dependant on part 1 so you need to finsh that first, if you did, press the button -> ");
@@ -528,8 +698,6 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             }
         });
 
-        jTextField33.setText("jTextField33");
-
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -538,41 +706,42 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField26, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(10, 10, 10)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(28, 28, 28)
-                                .addComponent(classData))
-                            .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(34, 34, 34)
-                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(34, 34, 34)
-                                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(80, 80, 80)
-                                .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel9Layout.createSequentialGroup()
-                                        .addComponent(classWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(classArmor, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(classRWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(classTProf))
+                                .addComponent(classWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(classArmor, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(classRWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)
-                                .addComponent(classSV, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(288, 288, 288)
-                                .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel9Layout.createSequentialGroup()
+                                        .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(28, 28, 28)
+                                        .addComponent(classData))
+                                    .addGroup(jPanel9Layout.createSequentialGroup()
+                                        .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(288, 288, 288)
+                                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel9Layout.createSequentialGroup()
+                                        .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(122, 122, 122)
+                                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel9Layout.createSequentialGroup()
+                                        .addComponent(classTProf, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(35, 35, 35)
+                                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(classSV, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                                .addGap(19, 19, 19)
+                                                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(76, 76, 76)))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -597,16 +766,15 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(classWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(classArmor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(classRWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(753, Short.MAX_VALUE))
+                        .addComponent(classTools, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(classRWeapon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(787, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes part 2", jPanel9);
@@ -658,6 +826,8 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         });
 
         jTextField23.setText("Armor");
+
+        jTextField24.setEditable(false);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -747,7 +917,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(charSpells, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(charRace, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(579, Short.MAX_VALUE))
+                .addContainerGap(613, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Your Chacater So Far", jPanel8);
@@ -786,43 +956,53 @@ public class DnD_character_Maker extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    public void barbarian(){
+
+    public void setComboBox(){
+        classArmor.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classArmor1, classArmor2, classArmor3}));
+        classWeapon.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classWeapon1, classWeapon2, classWeapon3}));
+        classTools.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classTools1, classTools2}));
+        classRWeapon.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classRWeapon1, classRWeapon2, classRWeapon3}));
+        classSV.setText(classSV1);
+        classTProf.setText(classTProff);
         
     }
-    public void bard(){
+    public void barbarian() {
         
     }
-    public void cleric(){
-        
+
+    public void bard() {
     }
-    public void druid(){
-        
+
+    public void cleric() {
     }
-    public void fighter(){
-        
+
+    public void druid() {
     }
-    public void monk(){
-        
+
+    public void fighter() {
     }
-    public void paladin(){
-        
+
+    public void monk() {
     }
-    public void ranger(){
-        
+
+    public void paladin() {
     }
-    public void rogue(){
-        
+
+    public void ranger() {
     }
-    public void sorcerer(){
-        
+
+    public void rogue() {
     }
-    public void warlock(){
-        
+
+    public void sorcerer() {
     }
-    public void wizzard(){
-        
+
+    public void warlock() {
     }
-    
+
+    public void wizzard() {
+    }
+
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
@@ -832,43 +1012,57 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     }//GEN-LAST:event_classChoiceActionPerformed
 
     private void classChoiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceButtonActionPerformed
-        if (classChoice.getSelectedItem().toString().equals("Barbarian"));{
-        barbarian();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Bard"));{
-        bard();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Cleric"));{
-        cleric();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Druid"));{
-        druid();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Fighter"));{
-        fighter();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Monk"));{
-        monk();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Paladin"));{
-        paladin();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Ranger"));{
-        ranger();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Rogue"));{
-        rogue();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Sorcerer"));{
-        sorcerer();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Warlock"));{
-        warlock();
-    }
-        if (classChoice.getSelectedItem().toString().equals("Wizzard"));{
-        wizzard();
-    }
         
+        setComboBox();
+        if (classChoice.getSelectedItem().toString().equals("Barbarian"));
+        {
+            barbarian();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Bard"));
+        {
+            bard();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Cleric"));
+        {
+            cleric();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Druid"));
+        {
+            druid();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Fighter"));
+        {
+            fighter();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Monk"));
+        {
+            monk();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Paladin"));
+        {
+            paladin();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Ranger"));
+        {
+            ranger();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Rogue"));
+        {
+            rogue();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Sorcerer"));
+        {
+            sorcerer();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Warlock"));
+        {
+            warlock();
+        }
+        if (classChoice.getSelectedItem().toString().equals("Wizzard"));
+        {
+            wizzard();
+        }
+
 
         charClass.setText(classChoice.getSelectedItem().toString());
         classDone.setText("Done! Go to Classes 2");
@@ -889,10 +1083,22 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private void classDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classDataActionPerformed
         // TODO add your handling code here:
         //513-523, set the combo box options to a certain variable
-        if (classChoice.getSelectedItem().toString()==("Barbarian")){
+        if (classChoice.getSelectedItem().toString() == ("Barbarian")) {
             classTProf.setText("meme");
         }
     }//GEN-LAST:event_classDataActionPerformed
+
+    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField33ActionPerformed
+
+    private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField39ActionPerformed
+
+    private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField37ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -928,7 +1134,6 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField charClass;
     private javax.swing.JTextField charEquip;
@@ -936,19 +1141,27 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField charProf;
     private javax.swing.JTextField charRace;
     private javax.swing.JTextField charSpells;
+    private javax.swing.JButton classAbSc;
     private javax.swing.JComboBox classArmor;
+    private javax.swing.JTextField classCha;
     private javax.swing.JComboBox classChoice;
     private javax.swing.JButton classChoiceButton;
+    private javax.swing.JTextField classCon;
     private javax.swing.JButton classData;
+    private javax.swing.JTextField classDex;
     private javax.swing.JTextField classDone;
+    private javax.swing.JTextField classInt;
     private javax.swing.JComboBox classRWeapon;
     private javax.swing.JTextField classSV;
+    private javax.swing.JTextField classStr;
     private javax.swing.JTextField classTProf;
     private javax.swing.JComboBox classTools;
     private javax.swing.JComboBox classWeapon;
+    private javax.swing.JTextField classWis;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -964,6 +1177,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextArea jTextArea1;
@@ -973,6 +1187,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -1001,7 +1216,13 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField34;
+    private javax.swing.JTextField jTextField35;
+    private javax.swing.JTextField jTextField36;
+    private javax.swing.JTextField jTextField37;
+    private javax.swing.JTextField jTextField38;
+    private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
