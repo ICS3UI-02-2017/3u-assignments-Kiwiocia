@@ -41,13 +41,14 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     Color hair = new Color(45, 41, 38);
     Color luster = new Color(250, 250, 250);
     Color eyes = new Color(61, 34, 1);
-    Color luster2 = new Color(232, 232, 232);
+    Color luster2 = new Color(200, 200, 200);
     int brow1YPos = 220;
     boolean eyebrowUp = true;
     boolean eyebrowDown = false;
     int luster1aX = 435;
     int luster1aY = 250;
-    int luster2aX = 10;
+    int luster2aX = 235;
+    int luster2aY = 250;
     boolean lusterMove = true;
 
     // Constructor to create the Frame and place the panel in
@@ -142,16 +143,24 @@ public class The_Face_Thing extends JComponent implements ActionListener {
         g.fillOval(355, 200, 150, 150);
         //shine of the glasses added
         g.setColor(luster);
+        //left eye shine
         int[] rimsX = {435, 435, 475, 475};
         int[] rimsY = {250, 230, 270, 290};
         g.fillPolygon(rimsX, rimsY, 4);
+        //right eye shine
         int[] shineX = {235, 235, 275, 275};
         int[] shineY = {250, 230, 270, 290};
         g.fillPolygon(shineX, shineY, 4);
+        //lens shine in both eyes
         g.setColor(luster2);
+        //left
         int[] luster1X = {luster1aX, luster1aX, luster1aX + 10, luster1aX + 10};
-        int[] luster1Y = {luster1aY, luster1aY - 20, luster1aY -10, luster1aY + 10};
+        int[] luster1Y = {luster1aY, luster1aY - 20, luster1aY - 10, luster1aY + 10};
         g.fillPolygon(luster1X, luster1Y, 4);
+        //right
+        int[] luster2X = {luster2aX, luster2aX, luster2aX + 10, luster2aX + 10};
+        int[] luster2Y = {luster2aY, luster2aY - 20, luster2aY - 10, luster2aY + 10};
+        g.fillPolygon(luster2X, luster2Y, 4);
         //end of glasses
 
 
@@ -169,26 +178,37 @@ public class The_Face_Thing extends JComponent implements ActionListener {
     // The main game loop
     // In here is where all the logic for my game will go
     public void gameLoop() {
-        if (brow1YPos <= 190) {
+        if (brow1YPos <= 180) {
             eyebrowUp = false;
         }
         if (brow1YPos >= 220) {
             eyebrowUp = true;
         }
         if (eyebrowUp) {
-            brow1YPos = brow1YPos - 2;
+            brow1YPos = brow1YPos - 5;
         } else {
-            brow1YPos = brow1YPos + 2;
+            brow1YPos = brow1YPos + 5;
         }
-        if (lusterMove){
-            luster1aX = luster1aX+1;
-            luster1aY = luster1aY+1;
+        if (lusterMove) {
+            luster1aX = luster1aX + 2;
+            luster1aY = luster1aY + 2;
+            luster2aY = luster2aY + 2;
+            luster2aX = luster2aX + 2;
         }
-        if(luster1aX == 465){
-            luster1aX= 435; 
-            luster1aY=250;
+        if (luster1aX >= 465 && luster1aX <=490) {
+            luster1aX = 850;
+            luster1aY = 850;
+            luster2aY = 850;
+            luster2aX = 850;
+        }
+        if(luster1aX >=1000){
+            luster1aX = 435;
+            luster1aY = 250;
+            luster2aY = 250;
+            luster2aX = 235;
         }
         
+
     }
 
     // Used to implement any of the Mouse Actions
