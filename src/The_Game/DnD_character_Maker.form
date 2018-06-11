@@ -131,7 +131,7 @@
                       <Component id="jTextField8" min="-2" pref="61" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="jTextField9" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace pref="701" max="32767" attributes="0"/>
+                      <EmptySpace pref="735" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -205,7 +205,7 @@
                       <Component id="jTextField1" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="515" max="-2" attributes="0"/>
-                      <EmptySpace pref="443" max="32767" attributes="0"/>
+                      <EmptySpace pref="477" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -291,7 +291,7 @@
                       <Component id="jTextField7" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane4" min="-2" pref="741" max="-2" attributes="0"/>
-                      <EmptySpace pref="271" max="32767" attributes="0"/>
+                      <EmptySpace pref="305" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -369,7 +369,7 @@
                       <Component id="jTextField34" min="-2" pref="39" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane7" min="-2" pref="739" max="-2" attributes="0"/>
-                      <EmptySpace pref="264" max="32767" attributes="0"/>
+                      <EmptySpace pref="298" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -476,7 +476,7 @@
                       <Component id="jScrollPane2" min="-2" pref="266" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="475" max="32767" attributes="0"/>
+                      <EmptySpace pref="509" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -651,7 +651,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane5" min="-2" pref="642" max="-2" attributes="0"/>
-                              <EmptySpace pref="383" max="32767" attributes="0"/>
+                              <EmptySpace pref="417" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -736,7 +736,7 @@
                               <Component id="classChoiceButton" min="-2" pref="23" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="classDone" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="360" max="32767" attributes="0"/>
+                              <EmptySpace pref="394" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -945,7 +945,7 @@
                               </Group>
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                               <Component id="classAbSc" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="183" max="32767" attributes="0"/>
+                              <EmptySpace pref="217" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1108,7 +1108,7 @@
                                                       <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
                                                           <Component id="jTextField47" min="-2" pref="124" max="-2" attributes="0"/>
-                                                          <Component id="jTextField31" min="-2" pref="113" max="-2" attributes="0"/>
+                                                          <Component id="classRweapons" min="-2" pref="113" max="-2" attributes="0"/>
                                                           <Group type="102" attributes="0">
                                                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                                               <Component id="classEquip" min="-2" pref="177" max="-2" attributes="0"/>
@@ -1142,6 +1142,13 @@
                                                   <Component id="jTextField30" min="-2" pref="69" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="reset" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jTextField51" min="-2" pref="145" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
@@ -1173,7 +1180,7 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jTextField29" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField30" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="classRweapons" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jTextField32" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1207,7 +1214,11 @@
                               <Component id="classSkill5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="classSkill6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="612" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="reset" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField51" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="556" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1300,7 +1311,7 @@
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classArmorActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField31">
+                    <Component class="javax.swing.JTextField" name="classRweapons">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1406,16 +1417,25 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="jCheckBox2"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classSkill2ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="classSkill3">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="jCheckBox3"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classSkill3ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="classSkill4">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="jCheckBox4"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classSkill4ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="classSkill5">
                       <Properties>
@@ -1429,8 +1449,175 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="jCheckBox6"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="classSkill6ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="reset">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="reset your options"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField51">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Uncheck the boxes after"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel12">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Races">
+                        <Property name="tabTitle" type="java.lang.String" value="Races"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane9" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jTextField24" min="-2" pref="139" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="340" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jTextField52" max="32767" attributes="0"/>
+                                          <Component id="raceChoice" pref="105" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="324" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                      <Component id="raceOutput" min="-2" pref="119" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jButton1" min="-2" pref="138" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="385" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField24" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jScrollPane9" min="-2" pref="644" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="jTextField52" min="-2" pref="30" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="raceChoice" min="-2" pref="30" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="raceOutput" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="180" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="jTextField24">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Alrighty, Time for races"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="jTextArea9">
+                          <Properties>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Adobe Caslon Pro" size="14" style="0"/>
+                            </Property>
+                            <Property name="rows" type="int" value="5"/>
+                            <Property name="text" type="java.lang.String" value="&#xa;&#x9;Dwarves : Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand&#xa;&#x9;&#x9;well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly&#xa;&#x9;&#x9;two feet taller. &#xa;&#x9;&#x9;Race Bonuses: Age:400 years, +2 to constitution, and +1 to wisdom, dakr vision (see in the dark), poison &#xa;&#x9;&#x9;&#x9;resistance, proficeint in "/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JTextField" name="jTextField52">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pick Your Race"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="raceChoice">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="8">
+                            <StringItem index="0" value="Dragonborn"/>
+                            <StringItem index="1" value="Dwarf"/>
+                            <StringItem index="2" value="Elf"/>
+                            <StringItem index="3" value="Gnome"/>
+                            <StringItem index="4" value="Halfing"/>
+                            <StringItem index="5" value="Half - Orc"/>
+                            <StringItem index="6" value="Human"/>
+                            <StringItem index="7" value="Tiefling"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pick your Race"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="raceOutput">
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel13">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Pick your race">
+                        <Property name="tabTitle" type="java.lang.String" value="Pick your race"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="847" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="1070" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
                 </Container>
                 <Container class="javax.swing.JPanel" name="jPanel8">
                   <Constraints>
@@ -1489,7 +1676,7 @@
                                                                   </Group>
                                                                   <Group type="102" alignment="1" attributes="0">
                                                                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                                                      <Component id="jTextField49" min="-2" pref="131" max="-2" attributes="0"/>
+                                                                      <Component id="maxHP" min="-2" pref="131" max="-2" attributes="0"/>
                                                                   </Group>
                                                               </Group>
                                                           </Group>
@@ -1503,7 +1690,7 @@
                                                               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                                               <Group type="103" groupAlignment="0" attributes="0">
                                                                   <Component id="classSProff" min="-2" pref="125" max="-2" attributes="0"/>
-                                                                  <Component id="jTextField24" min="-2" pref="125" max="-2" attributes="0"/>
+                                                                  <Component id="charArmor" min="-2" pref="125" max="-2" attributes="0"/>
                                                               </Group>
                                                           </Group>
                                                           <Component id="jTextField43" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
@@ -1583,7 +1770,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextField24" pref="37" max="32767" attributes="0"/>
+                                  <Component id="charArmor" pref="37" max="32767" attributes="0"/>
                                   <Component id="charEquip" max="32767" attributes="0"/>
                                   <Component id="charName" max="32767" attributes="0"/>
                               </Group>
@@ -1607,7 +1794,7 @@
                               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="charRace" pref="41" max="32767" attributes="0"/>
-                                  <Component id="jTextField49" max="32767" attributes="0"/>
+                                  <Component id="maxHP" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -1635,7 +1822,7 @@
                               <Component id="jTextField21" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jTextField22" min="-2" pref="42" max="-2" attributes="0"/>
-                              <EmptySpace pref="419" max="32767" attributes="0"/>
+                              <EmptySpace pref="453" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1744,7 +1931,7 @@
                         <Property name="text" type="java.lang.String" value="Armor"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField24">
+                    <Component class="javax.swing.JTextField" name="charArmor">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
@@ -1809,10 +1996,13 @@
                         <Property name="text" type="java.lang.String" value="Max Hp"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JTextField" name="jTextField49">
+                    <Component class="javax.swing.JTextField" name="maxHP">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="maxHPActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>

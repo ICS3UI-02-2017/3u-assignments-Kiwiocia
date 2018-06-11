@@ -36,6 +36,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     String classEquip3;
     int antiClassSkill = 0;
     int classHP;
+    int classHpTOT;
 
     /**
      * Creates new form DnD_character_Maker
@@ -122,7 +123,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         classWeapon = new javax.swing.JComboBox();
         jTextField30 = new javax.swing.JTextField();
         classArmor = new javax.swing.JComboBox();
-        jTextField31 = new javax.swing.JTextField();
+        classRweapons = new javax.swing.JTextField();
         classRWeapon = new javax.swing.JComboBox();
         jTextField32 = new javax.swing.JTextField();
         classTools = new javax.swing.JComboBox();
@@ -136,6 +137,17 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         classSkill4 = new javax.swing.JCheckBox();
         classSkill5 = new javax.swing.JCheckBox();
         classSkill6 = new javax.swing.JCheckBox();
+        reset = new javax.swing.JButton();
+        jTextField51 = new javax.swing.JTextField();
+        jPanel12 = new javax.swing.JPanel();
+        jTextField24 = new javax.swing.JTextField();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextArea9 = new javax.swing.JTextArea();
+        jTextField52 = new javax.swing.JTextField();
+        raceChoice = new javax.swing.JComboBox();
+        jButton1 = new javax.swing.JButton();
+        raceOutput = new javax.swing.JTextField();
+        jPanel13 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
@@ -154,7 +166,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextField21 = new javax.swing.JTextField();
         jTextField22 = new javax.swing.JTextField();
         jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
+        charArmor = new javax.swing.JTextField();
         jTextField41 = new javax.swing.JTextField();
         classSTR = new javax.swing.JTextField();
         jTextField42 = new javax.swing.JTextField();
@@ -170,7 +182,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         jTextField43 = new javax.swing.JTextField();
         classSProff = new javax.swing.JTextField();
         jTextField25 = new javax.swing.JTextField();
-        jTextField49 = new javax.swing.JTextField();
+        maxHP = new javax.swing.JTextField();
 
         jInternalFrame1.setVisible(true);
 
@@ -232,7 +244,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(701, Short.MAX_VALUE))
+                .addContainerGap(735, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("The Cover", jPanel4);
@@ -273,7 +285,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(443, Short.MAX_VALUE))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro", jPanel1);
@@ -313,7 +325,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 741, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(271, Short.MAX_VALUE))
+                .addContainerGap(305, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro 2", jPanel3);
@@ -349,7 +361,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 739, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Intro Spell Slots", jPanel10);
@@ -452,7 +464,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(475, Short.MAX_VALUE))
+                .addContainerGap(509, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Terms to know", jPanel2);
@@ -477,7 +489,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 642, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(383, Short.MAX_VALUE))
+                .addContainerGap(417, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("How this works", jPanel6);
@@ -562,7 +574,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(classChoiceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(classDone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(360, Short.MAX_VALUE))
+                .addContainerGap(394, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes", jPanel7);
@@ -707,7 +719,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addComponent(classInte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addComponent(classAbSc)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("First Thing is First though", jPanel11);
@@ -749,9 +761,9 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             }
         });
 
-        jTextField31.setEditable(false);
-        jTextField31.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
-        jTextField31.setText("Other Weapons");
+        classRweapons.setEditable(false);
+        classRweapons.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
+        classRweapons.setText("Other Weapons");
 
         classRWeapon.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
         classRWeapon.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -794,10 +806,25 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         });
 
         classSkill2.setText("jCheckBox2");
+        classSkill2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classSkill2ActionPerformed(evt);
+            }
+        });
 
         classSkill3.setText("jCheckBox3");
+        classSkill3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classSkill3ActionPerformed(evt);
+            }
+        });
 
         classSkill4.setText("jCheckBox4");
+        classSkill4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classSkill4ActionPerformed(evt);
+            }
+        });
 
         classSkill5.setText("jCheckBox5");
         classSkill5.addActionListener(new java.awt.event.ActionListener() {
@@ -807,6 +834,20 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         });
 
         classSkill6.setText("jCheckBox6");
+        classSkill6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                classSkill6ActionPerformed(evt);
+            }
+        });
+
+        reset.setText("reset your options");
+        reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resetActionPerformed(evt);
+            }
+        });
+
+        jTextField51.setText("Uncheck the boxes after");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -840,7 +881,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                                         .addGap(19, 19, 19)
                                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(classRweapons, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel9Layout.createSequentialGroup()
                                                 .addGap(10, 10, 10)
                                                 .addComponent(classEquip, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))))))
@@ -862,7 +903,12 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                                     .addGroup(jPanel9Layout.createSequentialGroup()
                                         .addGap(10, 10, 10)
                                         .addComponent(classArmor, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(reset)
+                                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addContainerGap()
@@ -886,7 +932,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(classRweapons, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -914,10 +960,97 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(classSkill5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(classSkill6)
-                .addContainerGap(612, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(reset)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(556, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Classes part 2", jPanel9);
+
+        jTextField24.setText("Alrighty, Time for races");
+
+        jTextArea9.setColumns(20);
+        jTextArea9.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 14)); // NOI18N
+        jTextArea9.setRows(5);
+        jTextArea9.setText("\n\tDwarves : Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand\n\t\twell under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly\n\t\ttwo feet taller. \n\t\tRace Bonuses: Age:400 years, +2 to constitution, and +1 to wisdom, dakr vision (see in the dark), poison \n\t\t\tresistance, proficeint in ");
+        jScrollPane9.setViewportView(jTextArea9);
+
+        jTextField52.setText("Pick Your Race");
+
+        raceChoice.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Dragonborn", "Dwarf", "Elf", "Gnome", "Halfing", "Half - Orc", "Human", "Tiefling" }));
+
+        jButton1.setText("Pick your Race");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jScrollPane9))
+                            .addGroup(jPanel12Layout.createSequentialGroup()
+                                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(340, 340, 340)
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField52)
+                            .addComponent(raceChoice, 0, 105, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(324, 324, 324)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(raceOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(385, Short.MAX_VALUE))
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(71, 71, 71)
+                .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(raceChoice, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(raceOutput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(180, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Races", jPanel12);
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 847, Short.MAX_VALUE)
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1070, Short.MAX_VALUE)
+        );
+
+        jTabbedPane2.addTab("Pick your race", jPanel13);
 
         jTextField13.setFont(new java.awt.Font("Adobe Caslon Pro", 0, 18)); // NOI18N
         jTextField13.setText("If you haven't chosen your Class, race, background and name yet, switch to the tabs above and do so.");
@@ -967,7 +1100,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
 
         jTextField23.setText("Armor");
 
-        jTextField24.setEditable(false);
+        charArmor.setEditable(false);
 
         jTextField41.setText("Strength");
         jTextField41.addActionListener(new java.awt.event.ActionListener() {
@@ -992,7 +1125,12 @@ public class DnD_character_Maker extends javax.swing.JFrame {
 
         jTextField25.setText("Max Hp");
 
-        jTextField49.setEditable(false);
+        maxHP.setEditable(false);
+        maxHP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                maxHPActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1035,7 +1173,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                                                         .addComponent(charProf, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                                                         .addGap(37, 37, 37)
-                                                        .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                        .addComponent(maxHP, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                             .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(18, 18, 18)
@@ -1045,7 +1183,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                                                 .addGap(10, 10, 10)
                                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(classSProff, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                    .addComponent(charArmor, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                             .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(jPanel8Layout.createSequentialGroup()
                                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1101,7 +1239,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                     .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                    .addComponent(charArmor, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                     .addComponent(charEquip)
                     .addComponent(charName))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1121,7 +1259,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(charRace, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                    .addComponent(jTextField49))
+                    .addComponent(maxHP))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1146,7 +1284,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
                 .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(419, Short.MAX_VALUE))
+                .addContainerGap(453, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Your Chacater So Far", jPanel8);
@@ -1186,12 +1324,23 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void classSkillDisable() {
+        if (antiClassSkill >= 2) {
+            classSkill1.setEnabled(false);
+            classSkill2.setEnabled(false);
+            classSkill3.setEnabled(false);
+            classSkill4.setEnabled(false);
+            classSkill5.setEnabled(false);
+            classSkill6.setEnabled(false);
+        }
+    }
+
     public void setComboBox() {
         classArmor.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classArmor1, classArmor2, classArmor3}));
         classWeapon.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classWeapon1, classWeapon2, classWeapon3}));
         classTools.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classTools1, classTools2}));
         classRWeapon.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classRWeapon1, classRWeapon2, classRWeapon3}));
-        classEquip.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classEquip1,classEquip2,classEquip3}));
+        classEquip.setModel(new javax.swing.DefaultComboBoxModel(new String[]{classEquip1, classEquip2, classEquip3}));
         classSV.setText(classSV1);
         classTProf.setText(classTProff);
     }
@@ -1199,26 +1348,41 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     public void barbarian() {
         classWeapon1 = "Greataxe";
         classWeapon2 = "Maul";
-        classWeapon3 = "Greatsword";
+        classWeapon3 = "Greasword";
         classRWeapon1 = "2 handaxes";
         classRWeapon2 = "Dagger";
         classArmor1 = "N/A";
         classTools1 = "None";
         classSV1 = "Strength and Constitution";
         classEquip1 = "Explorer's Pack and 4 Javlins";
-        classSkills1="Animal Handling";
-        classSkills2="Athletics";
-        classSkills3="Intimidation";
-        classSkills4="Nature";
-        classSkills5="Perception";
-        classSkills6="Survival";
-        
-        
+        classSkills1 = "Animal Handling";
+        classSkills2 = "Athletics";
+        classSkills3 = "Intimidation";
+        classSkills4 = "Nature";
+        classSkills5 = "Perception";
+        classSkills6 = "Survival";
         setComboBox();
-
+        classHpTOT=12;
     }
 
     public void bard() {
+        classRweapons.setText("Instuments");
+        classWeapon1 = "Rapier";
+        classWeapon2 = "LongSword";
+        classRWeapon1 = "lute";
+        classRWeapon2 = "any instrument";
+        classArmor1 = "Leather";
+        classTools1 = "3 instruments of your chocie";
+        classSV1 = "Dexterity and Charisma";
+        classEquip1 = "Diplomat's pack";
+        classEquip2 = "Entertainer's Pack";
+        classSkills1 = "Slight of Hand";
+        classSkills2 = "Sneak";
+        classSkills3 = "Acrobatics";
+        classSkills4 = "Slight of Hand";
+        classSkills5 = "Slight of Hand";
+        classSkills6 = "Slight of Hand";
+
     }
 
     public void cleric() {
@@ -1251,13 +1415,158 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     public void wizzard() {
     }
 
+    // THIS IS JUST A BUFFER ZONE SO I KNOW WHEN MY RACE METHODS ARE SEPERATED FROM MY CLASS METHODS////////////////////////////// 
+    public void dragonborn() {
+    }
+
+    public void dwarf() {
+    }
+
+    public void elf() {
+    }
+
+    public void halfing() {
+    }
+
+    public void human() {
+    }
+
+    public void halfOrc() {
+    }
+
+    public void gnome() {
+    }
+
+    public void tiefling() {
+    }
+
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void classChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceActionPerformed
+    private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_classChoiceActionPerformed
+    }//GEN-LAST:event_jTextField41ActionPerformed
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField21ActionPerformed
+
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
+        // TODO add your handling code here:
+        antiClassSkill = -2;
+        classSkill1.setEnabled(true);
+        classSkill2.setEnabled(true);
+        classSkill3.setEnabled(true);
+        classSkill4.setEnabled(true);
+        classSkill5.setEnabled(true);
+        classSkill6.setEnabled(true);
+    }//GEN-LAST:event_resetActionPerformed
+
+    private void classSkill6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill6ActionPerformed
+        // TODO add your handling code here:
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill6ActionPerformed
+
+    private void classSkill5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill5ActionPerformed
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill5ActionPerformed
+
+    private void classSkill4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill4ActionPerformed
+        // TODO add your handling code here:
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill4ActionPerformed
+
+    private void classSkill3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill3ActionPerformed
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill3ActionPerformed
+
+    private void classSkill2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill2ActionPerformed
+        // TODO add your handling code here:
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill2ActionPerformed
+
+    private void classSkill1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill1ActionPerformed
+        // TODO add your handling code here:
+        antiClassSkill = antiClassSkill + 1;
+        if (antiClassSkill >= 2) {
+            classSkillDisable();
+        }
+    }//GEN-LAST:event_classSkill1ActionPerformed
+
+    private void classEquipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classEquipActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_classEquipActionPerformed
+
+    private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField45ActionPerformed
+
+    private void classArmorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classArmorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_classArmorActionPerformed
+
+    private void classWeaponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classWeaponActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_classWeaponActionPerformed
+
+    private void classAbScActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classAbScActionPerformed
+
+        int classStr = Integer.parseInt(classStre.getText());
+        classSTR.setText(classStre.getText());
+        int classDex = Integer.parseInt(classDext.getText());
+        classDEX.setText(classDext.getText());
+        int classCon = Integer.parseInt(classCons.getText());
+        classCON.setText(classCons.getText());
+        int classInt = Integer.parseInt(classInte.getText());
+        classINT.setText(classInte.getText());
+        int classWis = Integer.parseInt(classWisd.getText());
+        classWIS.setText(classWisd.getText());
+        int classCha = Integer.parseInt(classChar.getText());
+        classCHA.setText(classChar.getText());
+        double strMod = (classStr - 10) / 2;
+        double dexMod = (classStr - 10) / 2;
+        double conMod = (classStr - 10) / 2;
+        double intMod = (classStr - 10) / 2;
+        double wisMod = (classStr - 10) / 2;
+        double chaMod = (classStr - 10) / 2;
+        maxHP.setText(Double.toString(conMod+classHpTOT));
+    }//GEN-LAST:event_classAbScActionPerformed
+
+    private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField39ActionPerformed
+
+    private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField37ActionPerformed
+
+    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField33ActionPerformed
+
+    private void classDoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classDoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_classDoneActionPerformed
 
     private void classChoiceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceButtonActionPerformed
 
@@ -1310,88 +1619,53 @@ public class DnD_character_Maker extends javax.swing.JFrame {
             wizzard();
         }
 
-
         charClass.setText(classChoice.getSelectedItem().toString());
         classDone.setText("Done! Go to the next page");
     }//GEN-LAST:event_classChoiceButtonActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+    private void classChoiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classChoiceActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
+    }//GEN-LAST:event_classChoiceActionPerformed
 
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void classWeaponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classWeaponActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_classWeaponActionPerformed
-
-    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField33ActionPerformed
-
-    private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField39ActionPerformed
-
-    private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField37ActionPerformed
-
-    private void classAbScActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classAbScActionPerformed
-
-        int classStr = Integer.parseInt(classStre.getText());
-        classSTR.setText(classStre.getText());
-        int classDex = Integer.parseInt(classDext.getText());
-        classDEX.setText(classDext.getText());
-        int classCon = Integer.parseInt(classCons.getText());
-        classCON.setText(classCons.getText());
-        int classInt = Integer.parseInt(classInte.getText());
-        classINT.setText(classInte.getText());
-        int classWis = Integer.parseInt(classWisd.getText());
-        classWIS.setText(classWisd.getText());
-        int classCha = Integer.parseInt(classChar.getText());
-        classCHA.setText(classChar.getText());
-        double strMod = (classStr-10)/2;
-        System.out.println(strMod);
-    }//GEN-LAST:event_classAbScActionPerformed
-
-    private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField41ActionPerformed
-
-    private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField45ActionPerformed
-
-    private void classArmorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classArmorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_classArmorActionPerformed
-
-    private void classEquipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classEquipActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_classEquipActionPerformed
-
-    private void classDoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classDoneActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_classDoneActionPerformed
-
-    private void classSkill5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill5ActionPerformed
-        antiClassSkill= antiClassSkill + 1;
-        if (antiClassSkill >= 2){
-            classSkill2.setEnabled(false);
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
         }
-    }//GEN-LAST:event_classSkill5ActionPerformed
-
-    private void classSkill1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classSkill1ActionPerformed
-        // TODO add your handling code here:
-        antiClassSkill= antiClassSkill + 1;
-        System.out.println(antiClassSkill);
-        if (antiClassSkill >= 2){
-            classSkill2.setEnabled(false);
+        if (raceChoice.getSelectedItem().toString().equals("Dwarf"));
+        {
+            dwarf();
         }
-    }//GEN-LAST:event_classSkill1ActionPerformed
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        if (raceChoice.getSelectedItem().toString().equals("Dragonborn"));
+        {
+            dragonborn();
+        }
+        raceOutput.setText("Done, Check Race part 2 now");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void maxHPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maxHPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_maxHPActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1428,6 +1702,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField charArmor;
     private javax.swing.JTextField charClass;
     private javax.swing.JTextField charEquip;
     private javax.swing.JTextField charName;
@@ -1449,6 +1724,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField classINT;
     private javax.swing.JTextField classInte;
     private javax.swing.JComboBox classRWeapon;
+    private javax.swing.JTextField classRweapons;
     private javax.swing.JTextField classSProff;
     private javax.swing.JTextField classSTR;
     private javax.swing.JTextField classSV;
@@ -1464,11 +1740,14 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField classWIS;
     private javax.swing.JComboBox classWeapon;
     private javax.swing.JTextField classWisd;
+    private javax.swing.JButton jButton1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JList jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1486,6 +1765,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTextArea jTextArea1;
@@ -1496,6 +1776,7 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -1520,7 +1801,6 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField34;
@@ -1539,12 +1819,17 @@ public class DnD_character_Maker extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField46;
     private javax.swing.JTextField jTextField47;
     private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField maxHP;
+    private javax.swing.JComboBox raceChoice;
+    private javax.swing.JTextField raceOutput;
+    private javax.swing.JButton reset;
     // End of variables declaration//GEN-END:variables
 }
